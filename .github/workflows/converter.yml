@@ -2,7 +2,9 @@ name: Release Compiled PDF
 on:
   push:
     branches:
-      - main 
+      - main
+    paths:
+      - 'main.tex'
 
 jobs:
   build_latex:
