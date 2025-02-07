@@ -1,8 +1,8 @@
 name: Release Compiled PDF
 on:
   push:
-    tags:
-      - '*.*.*' 
+    branches:
+      - main 
 
 jobs:
   build_latex:
@@ -16,25 +16,17 @@ jobs:
         with:
           root_file: main.tex
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Commit and Push PDF
+        run: |
+          git add main.pdf
+          git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.ref_name }}
-          draft: false
-          prerelease: false
 
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env: 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./main.pdf
-          asset_name: main.pdf
-          asset_content_type: pdf
           
