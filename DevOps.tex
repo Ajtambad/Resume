@@ -23,7 +23,7 @@
 % Header
 \begin{center}
 \textbf{\huge Amogh Jagadish Tambad}\\[2pt] % Name
-tambadamogh@gmail.com \hspace{1mm} $|$ \hspace{1mm} +1(480) 876-5096  \hspace{1mm} $|$ \hspace{1mm} $linkedin.com/in/ajtambad/$ \hspace{1mm}
+tambadamogh@gmail.com \hspace{1mm} $|$ \hspace{1mm} +1(480) 876-5096  \hspace{1mm} $|$ \hspace{1mm} $linkedin.com/in/ajtambad/$ \hspace{1mm} $|$ \hspace{1mm} $github.com/Ajtambad$
 \end{center}
 
 % Education Section
@@ -54,8 +54,9 @@ REVA University, Bangalore, India \hfill GPA: 8.93/10\\ % Degree and GPA
 \hfill Jun 2024 - Aug 2024\\ % Position and duration
 \textit{Arch Mortgage Insurance, Greensboro, North Carolina}
 \begin{itemize}
-    \item Filtered logs and events going from OpenShift Kubernetes Clusters to \textbf{Splunk} using \textbf{Cribl}, reducing Splunk storage utilization by \textbf{40-50 GB/day} with \textbf{20\%} increase in search time.
-    \item Improved readability of Splunk logs with Cribl's Parser and Mask functions, resulting in a concise, easily searchable '\_raw' field.
+    \item Filtered logs and events going from OpenShift Kubernetes Clusters to \textbf{Splunk} using \textbf{Cribl} stream pipelines, reducing Splunk storage utilization by \textbf{40-50 GB/day} with \textbf{20\%} increase in search time.
+    \item Improved readability of Splunk logs with Cribl's Parser and Mask functions, resulting in a concise, easily searchable '\_raw' field, reducing parsing time to 2-3 seconds per log.
+    \item Designed a groovy script to eliminate Jenkins GUI access from command line, preventing malicious attacks and improving security.
     \item Worked with \textbf{OpenShift} to manage container-based applications in the \textbf{Kubernetes} environment.
     
 
@@ -68,9 +69,9 @@ REVA University, Bangalore, India \hfill GPA: 8.93/10\\ % Degree and GPA
 \begin{itemize}
     \item Engaged with the software development team on \textbf{Splunk} upgrades, troubleshooting, and deployments, ensuring up-to-date servers.
     \item Migrated 80\% data from On-prem to \textbf{AWS}, making access to data more flexible, secure, and inexpensive.
-    \item Integrated \textbf{Jenkins} and \textbf{GitHub} to maintain important documentation and test merge requests for semantic errors.
-    \item Performed \textbf{CI/CD} and 300+ bi-weekly micro-service \textbf{deployments} for web applications to deploy new UI and backend features.
-    \item Managed and tracked over 10 projects and 400+ tasks to completion through \textbf{JIRA}, resulting in smooth and error-free delivery. 
+    \item Integrated \textbf{Jenkins} and \textbf{GitHub} to maintain important documentation and test merge requests for semantic errors, reducing 1-2 hours per week of manual labour.
+    \item Managed \textbf{CI/CD} pipelines to automate and oversee 300+ bi-weekly microservice deployments for web applications, enabling rapid delivery of new UI and backend features.
+    \item Managed over 10 projects and 400+ tasks to completion through \textbf{JIRA}, resulting in smooth and error-free delivery. 
 \end{itemize}
 
 
@@ -83,7 +84,7 @@ REVA University, Bangalore, India \hfill GPA: 8.93/10\\ % Degree and GPA
 \begin{itemize}
     \item Built a highly scalable and available data processing pipeline that allows near-real-time processing and \textbf{analytics} of NYC Taxi Rides based spatial document stream data.
     \item Managed \textbf{Kubernetes} deployments of \textbf{Kafka}, \textbf{Zookeeper}, \textbf{Kafka-Connect}, and \textbf{Neo4j} components.
-    \item Tested the pipeline using a document stream as input and performed \textbf{PageRank} and \textbf{Breadth-First Search(BFS)} algorithms on the resulting neo4j graph database, establishing individual and relative importance of locations. 
+    \item Tested the pipeline using a document stream as input and performed \textbf{PageRank} and \textbf{Breadth-First Search(BFS)} algorithms on the resulting \textbf{neo4j} graph database, establishing individual and relative importance of locations. 
     
 \end{itemize}
 
@@ -93,21 +94,19 @@ REVA University, Bangalore, India \hfill GPA: 8.93/10\\ % Degree and GPA
 \begin{itemize}
     \item Built a web application using \textbf{Flask API} and \textbf{Gunicorn} server that takes image files as input, performs image recognition, and outputs predictions.
     \item Created web tier using an AWS \textbf{EC2} instance that receives images via \textbf{HTTP POST} requests and forwards them to AWS \textbf{SQS}.
-    \item Designed an \textbf{auto-scaling} app tier that spawns upto \textbf{20} EC2 instances based on number of requests in SQS with each of the instances performing image recognition.
+    \item Designed an \textbf{auto-scaling} app tier that spawns upto \textbf{20} EC2 instances based on the number of requests in SQS with each of the instances performing image recognition.
     \item Stored the predictions in \textbf{S3} buckets and sent them back through the web-tier, keeping the overall latency at under \textbf{3 minutes} for \textbf{50} concurrent requests.
     
 \end{itemize}
 
 \noindent
-\textbf{Novel Object Detection Using Reasoning by Elimination} \hfill Aug 2023 - Dec 2023\\% Project link and duration
+\textbf{LaTeX to PDF converter using Github Actions} \hfill Oct 2024 - Nov 2024\\% Project link and duration
 \textit{Arizona State University, Tempe, Arizona}
 \begin{itemize}
-    \item Engineered a system with \textbf{PyTorch} to detect 'novel' objects not included in training data.
-    \item Leveraged pre-trained \textbf{ResNet-18} and \textbf{BERT Tokenizer} models to extract features. 
-    \item Computed Cosine similarity and trained the agent with \textbf{reinforcement learning} to eliminate seen objects.
-    \item Generated an automobile-relevant, real-world dataset of 1260 images using \textbf{Stable Diffusion}. % Project description and contributions
+    \item Designed a \textbf{Github Actions} workflow which is triggered when a .tex file is pushed, automatically converting it to a PDF.
+    \item Used regex based \textbf{shell scripting} to have the current date in PDF commit, allowing efficient tracking of multiple resumes and their versions.
+    \item Hosted the resumes in github.io repository, ensuring constant \textbf{availability} and \textbf{shareability}.
 \end{itemize}
-
 
 % End document
 \end{document}
