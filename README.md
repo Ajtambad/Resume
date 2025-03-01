@@ -1,5 +1,10 @@
 # Latex to PDF using Github Actions
 
-A github actions based workflow that is triggered each time I push a LaTeX file to the repo, which is then compiled into a PDF and pushed into the repo. Worked on this with a goal of having one shareable link to my updated resume at all times. 
+A github actions based workflow that is triggered each time I push a LaTeX file to the repo, which is then compiled into a PDF and pushed into the repo. Worked on this with a goal of having one shareable link to my updated resumes at all times. 
+Three workflows, each triggered based on the filename of my latex resume file pushed, converts it to PDF and pushes it back to the repository.
 
-Resume can be found here - https://ajtambad.github.io/Resume/main.pdf
+Resumes are as follows:
+- Software Engineering (SDE) - [https://ajtambad.github.io/Resume/SDE.pdf](https://ajtambad.github.io/Resume/SDE.pdf)
+- DevOps/SRE - [https://ajtambad.github.io/Resume/DevOps.pdf](https://ajtambad.github.io/Resume/DevOps.pdf)
+- AI/ML - [https://ajtambad.github.io/Resume/AI.pdf](https://ajtambad.github.io/Resume/AI.pdf)
+
