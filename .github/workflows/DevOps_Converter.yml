@@ -25,6 +25,7 @@ jobs:
 
       - name: Commit and Push PDF
         run: |
+          git pull
           git add DevOps.pdf
           git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
           git push
