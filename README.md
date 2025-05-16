@@ -4,6 +4,6 @@ A github actions based workflow that is triggered each time I push a LaTeX file 
 Three workflows, each triggered based on the filename of my latex resume file pushed, converts it to PDF and pushes it back to the repository.
 
 Resumes are as follows:
-- Software Engineering (SDE) - [https://ajtambad.github.io/Resume/SDE.pdf](https://ajtambad.github.io/Resume/SDE.pdf)
-- DevOps/SRE - [https://ajtambad.github.io/Resume/DevOps.pdf](https://ajtambad.github.io/Resume/DevOps.pdf)
+- Software Engineering (SDE) - [https://ajtambad.github.io/Resume/SDE/Amogh_Tambad_Resume.pdf](https://ajtambad.github.io/Resume/SDE/Amogh_Tambad_Resume.pdf)
+- DevOps/SRE - [https://ajtambad.github.io/Resume/DevOps/Amogh_Tambad_Resume.pdf](https://ajtambad.github.io/Resume/DevOps/Amogh_Tambad_Resume.pdf)
 
