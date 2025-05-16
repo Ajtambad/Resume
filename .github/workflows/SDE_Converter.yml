@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'SDE.tex'
+      - 'SDE/SDE.tex'
 
 jobs:
   build_latex:
@@ -16,17 +16,22 @@ jobs:
       - name: Compile LaTex document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: SDE.tex
+          root_file: SDE/SDE.tex
 
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Rename file
+        run: |
+          mv SDE/SDE.pdf SDE/Amogh_Tambad_Resume.pdf
+
       - name: Commit and Push PDF
         run: |
           git pull
-          git add SDE.pdf
+          git add SDE/Amogh_Tambad_Resume.pdf
+          git diff --quiet && echo "No changes to commit" && exit 0
           git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
           git push
         env:
