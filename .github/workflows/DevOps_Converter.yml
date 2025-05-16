@@ -19,7 +19,7 @@ jobs:
       - name: Compile LaTex document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: DevOps/DevOps.tex
+          root_file: DevOps.tex
 
       - name: Configure Git
         run: |
