@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'SDE/SDE.tex'
+      - 'SDE.tex'
 
 jobs:
   build_latex:
