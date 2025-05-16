@@ -1,116 +1,143 @@
-% Document class and font size
-\documentclass[a4paper,9pt]{extarticle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Vignesh Iyer                                 %
+% MS CSE ASU                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Packages
-\usepackage[utf8]{inputenc} % For input encoding
-\usepackage{geometry} % For page margins
-\geometry{a4paper, margin=0.5in} % Set paper size and margins
-\usepackage{titlesec} % For section title formatting
-\usepackage{enumitem} % For itemized list formatting
-\usepackage{hyperref} % For hyperlinks
+% -------------- README --------------
+% Visit https://github.com/vgnshiyer/ASU-sparkysundevil-resume-template for comprehensive documenation.
 
-% Formatting
-\setlist{noitemsep} % Removes item separation
-\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
-\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+% -------------- Resume ---------------
+\documentclass{resume}
 
-% Begin document
 \begin{document}
 
-% Disable page numbers
-\pagestyle{empty}
+% --------- Contact Information -----------
+\introduction[
+    fullname={Amogh Jagadish Tambad},
+    email={tambadamogh@gmail.com},
+    phone={(480) 876-5096},
+    linkedin={linkedin.com/in/ajtambad},
+    github={github.com/Ajtambad}
+]
 
-% Header
-\begin{center}
-\textbf{\huge Amogh Jagadish Tambad}\\[2pt] % Name
-tambadamogh@gmail.com \hspace{1mm} $|$ \hspace{1mm} +1(480) 876-5096  \hspace{1mm} $|$ \hspace{1mm} $linkedin.com/in/ajtambad/$ \hspace{1mm} $|$ \hspace{1mm} $github.com/Ajtambad$
-\end{center}
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={Arizona State University, Tempe, AZ},
+        graduation={Aug 2023 - May 2025},
+        grade={4.00 GPA},
+        program={Master of Science, Computer Science},
+        coursework={Cloud Computing, Data Processing at Scale, Data Mining, Software Security},
+    ]
 
-% Education Section
-\section*{EDUCATION}
-\noindent
-\textbf{Master of Science}, Computer Science \hfill May 2025 \\ % University name and location
-\textit{Arizona State University, Tempe, Arizona}
-\hfill GPA: 3.96/4\\ % Degree and GPA
-\textbf{Relevant Coursework:} Cloud Computing, Data Processing at Scale, Data Mining, Data Visualization\\
+    \educationItem[
+        university={REVA University, Bangalore, India},
+        graduation={Aug 2017 - May 2021},
+        grade={3.77 GPA},
+        program={Bachelor of Technology, Computer Science},
+        coursework={Data Structure and Algorithms, Operating Systems},
+    ]
+\end{educationSection}
+% --------- Skills -----------
+\begin{skillsSection}{Skills}
+    \skillItem[
+        category={Languages},
+        skills={Python, C++, Bash, SQL, YAML, Scala, HTML, JavaScript, Java}
+    ] \\
+    \skillItem[
+        category={Technologies},
+        skills={AWS, Linux, PowerShell, PostmanAPI, Splunk, Cribl, Zabbix, Chef, Ansible, Terraform, Docker, Kubernetes, Jenkins, Github Actions, Nginx, Gunicorn}
+    ] \\
+    \skillItem[
+        category={Frameworks},
+        skills={PyTorch, TensorFlow, scikit-learn, Flask, FastAPI, React, Node, Next.js}
+    ] \\
+    \skillItem[
+        category={Data},
+        skills={PostgreSQL, MongoDB, Kafka, Spark, Hadoop, ZooKeeper, Prometheus, Grafana, JSON}
+    ]
+\end{skillsSection}
 
-\noindent
-\textbf{Bachelor of Technology (B.Tech)}, Computer Science and Engineering \hfill May 2021 \\ % University name and location
-\textit{REVA University, Bangalore, India}
-\hfill GPA: 8.93/10\\ % Degree and GPA
-\textbf{Relevant Coursework:} Data Structures and Algorithms, Computer Architecture, Operating Systems.
+% --------- Experience -----------
+\begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Arch Mortgage Insurance},
+        location={Greensboro, NC},
+        position={IT-Infrastructure-Platform/SRE Intern},
+        duration={Jun 2024 - Aug 2024}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing \textbf{daily Splunk storage usage by 40–50 GB} and improving \textbf{log search performance by 20\%}.
+        \item Enhanced log clarity and parsing efficiency by leveraging Cribl Parser and Mask functions, resulting in a streamlined raw field and reducing parsing time to 2–3 seconds per log.
+        \item Designed an automated pipeline using Ansible, Skopeo, and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by\textbf{ 90\%}.
+        
+    \end{itemize}
 
-% Skills Section
-\section*{SKILLS}
-\begin{itemize}
-    \item \textbf{Languages:} Python, C++, Bash, C, SQL, Scala, HTML, Java, JavaScript, Groovy. % Programming skills
-    \item \textbf{Tools and Technologies:} AWS (EC2, ECR, SQS, S3, Lambda, SNS), Git, Jenkins, Kafka, Spark, Heroku, Azure, Splunk, Zabbix, Docker, Kubernetes, PostgreSQL, MongoDB, GitHub Actions, Cribl, OpenShift, Minikube. % Software skills
-    \item \textbf{Libraries and Frameworks:} PyTorch, TensorFlow, Flask, OpenCV, Pandas, Keras, scikit-learn, Nginx, React, Node,js.
-\end{itemize}
+    \experienceItem[
+        company={Cerner Healthcare},
+        location={Bangalore, India},
+        position={System Engineer - 1},
+        duration={May 2021 - Jul 2023}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Migrated 80\% of data from on-prem to AWS, enhancing data access flexibility, security, and cost-efficiency.
+        \item Participated in regular on-call rotations, leveraging Zabbix and Splunk for system health monitoring, troubleshooting server issues, and resolving production alerts within 15 minutes, maintaining 99.99\% service reliability.
+        \item Troubleshot and resolved Jenkins pipeline issues, minimizing support ticket resolution time by 40\% and ensuring 99.9\% uptime for CI/CD workflows, leading to uninterrupted deployment pipelines.
+        \item Managed 300+ bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using Chef, accelerating delivery of new UI and backend features in a fast-paced production environment.
+    \end{itemize}
 
-% Experience Section
-\section*{EXPERIENCE}
-\noindent
-\textbf{IT-Infrastructure-Platform/SRE Intern}
-\hfill Jun 2024 - Aug 2024\\ % Position and duration
-\textit{Arch Mortgage Insurance, Greensboro, North Carolina}
-\begin{itemize}
-    \item Filtered logs and events going from OpenShift Kubernetes Clusters to \textbf{Splunk} using \textbf{Cribl} stream pipelines, reducing Splunk storage utilization by \textbf{40-50 GB/day} with \textbf{20\%} increase in search time.
-    \item Improved readability of Splunk logs with Cribl's Parser and Mask functions, resulting in a concise, easily searchable '\_raw' field, reducing parsing time to 2-3 seconds per log.
-    \item Designed a \textbf{groovy} script to eliminate \textbf{Jenkins GUI} access from the command line, preventing unauthorized access.
+\end{experienceSection}
+
+% --------- Projects -----------
+\begin{experienceSection}{Academic projects}
+
+    \projectItem[
+        title=RAG Implementation for arXiv Papers,
+        duration={Oct 2024 - Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Extracted and vectorized multimodal content (text, tables, images, equations) from 2000+ arXiv papers using CLIP and text embedding models, storing results in separate vector stores and indexing with DynamoDB.
+        \item Built a semantic retrieval pipeline with top‑k similarity search and GPT‑4o mini-based summarization, delivering concise, context-aware answers to user queries.
+    \end{itemize}
     
+    \projectItem[
+        title=Kubernetes based Data Processing Pipeline,
+        duration={Oct 2024 - Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Designed and deployed a scalable, near-real-time data pipeline on Kubernetes for spatial analytics of NYC Taxi Rides, enabling data-driven decisions for urban mobility by processing ride patterns efficiently.
+        \item Leveraged Kafka, Kafka Connect, ZooKeeper, and Neo4j for real-time ingestion and graph processing (PageRank, BFS), uncovering location importance and optimizing resource allocation.
+    \end{itemize}
 
-\end{itemize}
+    \projectItem[
+        title=AWS-Based Face Recognition App,
+        duration={Feb 2024 - May 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed and deployed a Flask-based image recognition app using Gunicorn on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing.
+        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads.
+    \end{itemize}
 
-\noindent
-\textbf{System Engineer - 1}
-\hfill May 2021 - Jul 2023\\ % Position and duration
-\textit{Oracle Cerner, Bengaluru, India}
-\begin{itemize}
-    \item Engaged with the software development team on \textbf{Splunk} upgrades, troubleshooting, and deployments, ensuring up-to-date servers.
-    \item Migrated 80\% data from On-prem to \textbf{AWS}, making access to data more flexible, secure, and inexpensive.
-    \item Integrated \textbf{Jenkins} and \textbf{GitHub} to maintain important documentation and test merge requests for semantic errors, reducing 1-2 hours per week of manual labour.
-    \item Managed \textbf{CI/CD} pipelines to automate and oversee 300+ bi-weekly microservice deployments for web applications, enabling rapid delivery of new UI and backend features.
-    \item Managed over 10 projects and 400+ tasks to completion through \textbf{JIRA}, resulting in smooth and error-free delivery. 
-\end{itemize}
-
-
-
-% Projects Section
-\section*{PROJECTS}
-
-\noindent
-\textbf{RAG Implementation for arXiv Papers} \hfill Oct 2024 - Nov 2024\\% Project link and duration
-\textit{Arizona State University, Tempe, Arizona}
-\begin{itemize}
+    \projectItem[
+        title=TCR-Epitope Binding Affinity Prediction,
+        duration={Oct 2024 - Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a machine learning pipeline for TCR-epitope binding affinity prediction using pre-trained BERT-base-tcr embeddings and 5-fold cross-validation.
+        \item Achieved ~75\% accuracy and 80\% AUC; evaluated performance using precision, recall, and F1-score for balanced classification metrics.
+    \end{itemize}
     
-    \item Extracted tables, images, equations, and text from \textbf{2000+} arXiv papers for vectorization and storage.
-    \item Vectorized and stored them in separate vector stores using models like \textbf{CLIP} and text embedding models.
-    \item Implemented \textbf{similarity search} to retrieve the top 'k' relevant text and image chunks from \textbf{DynamoDB}.
-    \item Summarized retrieved content using the \textbf{OpenAI GPT-4o mini} model, delivering concise, contextually relevant responses to user queries.
-\end{itemize}
-
-\noindent
-\textbf{AWS Based Live Face Recognition App}  \hfill Feb 2024 - May 2024\\ % Project name and location
-\textit{Arizona State University, Tempe, Arizona} % Project link and duration
-\begin{itemize}
-    \item Built a web application using \textbf{Flask API} and \textbf{Gunicorn} server that takes image files as input, performs image recognition, and outputs predictions.
-    \item Created web tier using AWS \textbf{EC2} instance that receives images via \textbf{HTTP POST} requests and forwards them to AWS \textbf{SQS}.
-    \item Designed an \textbf{auto-scaling} app tier that spawns up to \textbf{20} EC2 instances based on the number of requests in SQS with each of the instances performing image recognition.
-    \item Stored the predictions in \textbf{S3} buckets and sent them back through the web-tier, keeping the overall latency at under \textbf{3 minutes} for \textbf{50} concurrent requests.
-    
-\end{itemize}
-
-\noindent
-\textbf{Kubernetes based Data Processing Pipeline}  \hfill Oct 2024 - Nov 2024\\ % Project name and location
-\textit{Arizona State University, Tempe, Arizona} % Project link and duration
-\begin{itemize}
-    \item Built a highly scalable and available data processing pipeline that allows near-real-time processing and \textbf{analytics} of NYC Taxi Rides based spatial document stream data.
-    \item Managed \textbf{Kubernetes} deployments of \textbf{Kafka}, \textbf{Zookeeper}, \textbf{Kafka-Connect}, and \textbf{Neo4j} components.
-    \item Tested the pipeline using a document stream as input and performed \textbf{PageRank} and \textbf{BFS} algorithms on the resulting neo4j graph database, establishing individual and relative importance of locations. 
-    
-\end{itemize}
+\end{experienceSection}
 
 
-% End document
 \end{document}

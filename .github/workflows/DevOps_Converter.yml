@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'DevOps/DevOps.tex'
+      - 'DevOps.tex'
 
 jobs:
   build_latex:

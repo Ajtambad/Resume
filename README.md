@@ -6,5 +6,4 @@ Three workflows, each triggered based on the filename of my latex resume file pu
 Resumes are as follows:
 - Software Engineering (SDE) - [https://ajtambad.github.io/Resume/SDE.pdf](https://ajtambad.github.io/Resume/SDE.pdf)
 - DevOps/SRE - [https://ajtambad.github.io/Resume/DevOps.pdf](https://ajtambad.github.io/Resume/DevOps.pdf)
-- AI/ML - [https://ajtambad.github.io/Resume/AI.pdf](https://ajtambad.github.io/Resume/AI.pdf)
 
