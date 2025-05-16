@@ -25,10 +25,6 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Rename file
-        run: |
-          mv DevOps.pdf Amogh_Tambad_Resume.pdf
       
       - name: Checkout main branch explicitly
         run: |
@@ -37,10 +33,14 @@ jobs:
       - name: Commit and Push PDF
         run: |
           git pull
-          git add Amogh_Tambad_Resume.pdf
+          git add DevOps.pdf
           git diff --quiet && echo "No changes to commit" && exit 0
           git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
           git push
+
+      - name: Rename file
+        run: |
+          mv DevOps.pdf Amogh_Tambad_Resume.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
