@@ -4,7 +4,7 @@ on:
     branches:
       - main
     paths:
-      - 'SDE.tex'
+      - 'SDE/SDE.tex'
 
 jobs:
   build_latex:
@@ -25,7 +25,7 @@ jobs:
 
       - name: Rename file
         run: |
-          mv SDE/SDE.pdf SDE/Amogh_Tambad_Resume.pdf
+          mv ../SDE.pdf Amogh_Tambad_Resume.pdf
 
       - name: Commit and Push PDF
         run: |
