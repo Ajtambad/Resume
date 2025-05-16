@@ -32,6 +32,8 @@ jobs:
       
       - name: Rename file
         run: |
+          ls -lrth
+          pwd
           mv DevOps.pdf Amogh_Tambad_Resume.pdf
         
       - name: Commit and Push PDF
