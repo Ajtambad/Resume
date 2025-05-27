@@ -37,8 +37,7 @@ jobs:
       - name: Commit and Push PDF
         run: |
           git pull
-          git add Amogh_Tambad_Resume.pdf
-          git diff --quiet && echo "No changes to commit" && exit 0
+          git add -f Amogh_Tambad_Resume.pdf
           git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
           git push
         env:
