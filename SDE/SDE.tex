@@ -94,6 +94,17 @@
 \begin{experienceSection}{Academic projects}
 
     \projectItem[
+        title=JobTrail - Go based job tracking,
+        duration={Jun 2024 - Present},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a Firefox extension and a Go backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured SQL database.
+        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications.    
+    \end{itemize}
+
+    \projectItem[
         title=RAG Implementation for arXiv Papers,
         duration={Oct 2024 - Nov 2024},
     ]
@@ -126,16 +137,6 @@
         \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads.
     \end{itemize}
 
-    \projectItem[
-        title=TCR-Epitope Binding Affinity Prediction,
-        duration={Oct 2024 - Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Developed a machine learning pipeline for TCR-epitope binding affinity prediction using pre-trained BERT-base-tcr embeddings and 5-fold cross-validation.
-        \item Achieved ~75\% accuracy and 80\% AUC; evaluated performance using precision, recall, and F1-score for balanced classification metrics.
-    \end{itemize}
     
 \end{experienceSection}
 

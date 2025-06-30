@@ -92,6 +92,18 @@
 
 % --------- Projects -----------
 \begin{experienceSection}{Academic projects}
+
+        \projectItem[
+        title=JobTrail - Go based job tracking,
+        duration={Jun 2024 - Present},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a Firefox extension and a Go backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured SQL database.
+        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications.    
+    \end{itemize}
+
     \projectItem[
         title={End-to-End Deployment Automation},
         duration={Mar 2025 - Apr 2025},
@@ -123,17 +135,6 @@
         \itemsep -6pt {}
         \item Developed and deployed a Flask-based image recognition app using Gunicorn on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing.
         \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads.
-    \end{itemize}
-
-    \projectItem[
-        title=RAG Implementation for arXiv Papers,
-        duration={Oct 2024 - Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Extracted and vectorized multimodal content (text, tables, images, equations) from 2000+ arXiv papers using CLIP and text embedding models, storing results in separate vector stores and indexing with DynamoDB.
-        \item Built a semantic retrieval pipeline with top‑k similarity search and GPT‑4o mini-based summarization, delivering concise, context-aware answers to user queries.
     \end{itemize}
     
 \end{experienceSection}
