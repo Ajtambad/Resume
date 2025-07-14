@@ -61,7 +61,7 @@
         \hfill{\MakeUppercase{\Huge\bfseries #1}}\hfill
         \break
         \vspace{-0.5em}
-        \hrule
+        % \hrule
     \endgroup
 }%
 
