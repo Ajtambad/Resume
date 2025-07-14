@@ -31,35 +31,45 @@
     ] % ASU
 
     \educationItem[
-        university={REVA University, Bangalore, India},
+        university={REVA University, Bangalore, KA},
         graduation={Aug 2017 - May 2021},
         grade={3.77 GPA},
         program={Bachelor of Technology, Computer Science},
-        coursework={Data Structure and Algorithms, Operating Systems, Cloud Computing},
+        coursework={Data Structure and Algorithms, Operating Systems, Cloud Computing, Computer Networks},
     ]
 \end{educationSection}
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages},
-        skills={Python, C++, Bash, SQL, YAML, Scala, HTML, JavaScript, Java}
+        category={Languages and Databases},
+        skills={Python, C++, Bash, SQL (Postgres, MySQL), NoSQL (MongoDB), Go, Scala, HTML, JavaScript, Java}
     ] \\
     \skillItem[
-        category={Technologies},
-        skills={AWS, Linux, PowerShell, PostmanAPI, Splunk, Cribl, Zabbix, Chef, Ansible, Terraform, Docker, Kubernetes, Jenkins, Helm, Github Actions, Nginx, Gunicorn}
+        category={Tools and Frameworks},
+        skills={AWS, Linux, Kafka, PostmanAPI, Docker, Kubernetes, Nginx, Gunicorn, Kafka, React, Flask, FastAPI, Node.js, PyTorch, TensorFlow, Zookeeper, Splunk, Github Actions, Terraform, Ansible, Git, Gitlab, Prometheus, Grafana, Jenkins, Cribl, Zabbix, Chef}
     ] \\
     \skillItem[
-        category={Frameworks},
-        skills={PyTorch, TensorFlow, scikit-learn, Flask, FastAPI, React, Node, Next.js}
-    ] \\
-    \skillItem[
-        category={Data},
-        skills={PostgreSQL, MongoDB, Kafka, Spark, Hadoop, ZooKeeper, Prometheus, Grafana, JSON}
+        category={Methodologies},
+        skills={Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, SDLC, Test Driven Development (TDD)}
     ]
 \end{skillsSection}
 
 % --------- Experience -----------
-\begin{experienceSection}{Professional Experience}
+
+    \begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Arizona State University},
+        location={Tempe, AZ},
+        position={Research Assistant, VISA Lab},
+        duration={Jun 2025 - Present}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Developing \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, and edge computing principles to evaluate custom software performance metrics and optimize deployment algorithms
+        \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with Kubernetes, implementing serverless functions for motion detection, frame extraction, face detection, and recognition
+    \end{itemize}
+
+
     \experienceItem[
         company={Arch Mortgage Insurance},
         location={Greensboro, NC},
@@ -68,24 +78,23 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing \textbf{daily Splunk storage usage by 40–50 GB} and improving \textbf{log search performance by 20\%}.
-        \item Enhanced log clarity and parsing efficiency by leveraging Cribl Parser and Mask functions, resulting in a streamlined raw field and reducing parsing time to 2-3 seconds per log.
-        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by\textbf{ 90\%}.
+        \item Built a \textbf{JavaScript} and \textbf{Cribl Stream} based scalable data processing solution and created 10+ conditional pipelines for log filtering and transformation, implementing custom business logic to filter and route logs from \textbf{OpenShift} pods to Splunk
+        \item Developed a container image synchronization system through \textbf{Ansible} automation scripts and \textbf{Red Hat registry} APIs that integrates with \textbf{Nexus Repository} for artifact management, eliminating 90\% of manual update processes
         
     \end{itemize}
 
     \experienceItem[
         company={Cerner Healthcare},
-        location={Bangalore, India},
+        location={Bangalore, KA},
         position={System Engineer - 1},
         duration={May 2021 - Jul 2023}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency.
-        \item Participated in regular on-call rotations, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, troubleshooting server issues, and resolving production alerts within 15 minutes, maintaining \textbf{99.99\%} service reliability.
-        \item Troubleshot and resolved \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines.
-        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, accelerating delivery of new UI and backend features in a fast-paced production environment.
+        \item Developed cloud migration scripts and data transformation pipelines to migrate 80\% of enterprise data from on-premises infrastructure to AWS, thereby enhancing access flexibility, security, and cost-efficiency
+        \item Built automated monitoring and alerting systems with \textbf{Zabbix} and \textbf{Splunk} APIs, developing custom dashboards and incident response automation that sped production resolution by 30\%
+        \item Troubleshot and resolved \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
+        \item Automated deployment orchestration for \textbf{300+} bi-weekly microservice releases through \textbf{Chef} configuration management and custom deployment scripts, accelerating delivery of new UI and backend features
     \end{itemize}
 
 \end{experienceSection}
@@ -100,30 +109,8 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed a Firefox extension and a Go backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured SQL database.
-        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications.    
-    \end{itemize}
-
-    \projectItem[
-        title=RAG Implementation for arXiv Papers,
-        duration={Oct 2024 - Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Extracted and vectorized multimodal content (text, tables, images, equations) from 2000+ arXiv papers using CLIP and text embedding models, storing results in separate vector stores and indexing with DynamoDB.
-        \item Built a semantic retrieval pipeline with top‑k similarity search and GPT‑4o mini-based summarization, delivering concise, context-aware answers to user queries.
-    \end{itemize}
-    
-    \projectItem[
-        title=Kubernetes based Data Processing Pipeline,
-        duration={Oct 2024 - Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Designed and deployed a scalable, near-real-time data pipeline on Kubernetes with Helm, enabling spatial analytics of NYC Taxi Rides for data-driven urban mobility insights.
-        \item Leveraged Kafka, Kafka Connect, ZooKeeper, and Neo4j for real-time ingestion and graph processing (PageRank, BFS), uncovering location importance and optimizing resource allocation.
+        \item Developed a full-stack job tracking application with a \textbf{Go} backend, Gorilla Mux router and \textbf{Firefox extension} frontend to capture job application data into a structured \textbf{PostgreSQL} database
+        \item Implemented automated CSV export and currently building an analytics dashboard using \textbf{React} to visualize metrics, reducing manual tracking time by 1---2 hours weekly
     \end{itemize}
 
     \projectItem[
@@ -133,8 +120,18 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed and deployed a Flask-based image recognition app using Gunicorn on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing.
-        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads.
+        \item Developed and deployed a scalable \textbf{Flask} web application using \textbf{Python} and \textbf{Gunicorn} on\textbf{ AWS EC2}, implementing HTTP-based image uploads through asynchronous processing pipeline leveraging \textbf{S3} storage and \textbf{SQS} message queuing
+        \item Architected an \textbf{auto-scaling} infrastructure that dynamically scales up to 20 EC2 instances based on SQS queue depth metrics, ensuring optimal performance and cost-efficiency for real-time image processing under variable workloads
+    \end{itemize}
+
+    \projectItem[
+        title=RAG Implementation for arXiv Papers,
+        duration={Oct 2024 - Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a multimodal data processing pipeline using \textbf{Python} to extract and vectorize content from 2000+ arXiv papers, implementing \textbf{CLIP} and text embedding models, \textbf{DynamoDB} indexing and vector database storage
     \end{itemize}
 
     
