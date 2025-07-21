@@ -41,25 +41,33 @@
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages},
-        skills={Python, C++, Bash, SQL, YAML, Scala, HTML, JavaScript, Java}
+        category={Languages and Databases},
+        skills={Python, C++, Bash, SQL (Postgres), NoSQL (MongoDB), Go, Scala, HTML, JavaScript, Java}
     ] \\
     \skillItem[
-        category={Technologies},
-        skills={AWS, GCP, Linux, PowerShell, PostmanAPI, Splunk, Cribl, Zabbix, Chef, Ansible, Terraform, Docker, Kubernetes, Helm, Jenkins, Github Actions, Nginx, Gunicorn}
+        category={Tools and Frameworks},
+        skills={AWS, Linux (RHEL, Ubuntu), PostmanAPI, Docker, Kubernetes, Nginx, Gunicorn, Flask, FastAPI, Node.js, Zookeeper, Splunk, Github Actions, Terraform, Ansible, Git, Gitlab, Prometheus, Grafana, Jenkins, Cribl, Zabbix, Chef}
     ] \\
     \skillItem[
-        category={Frameworks},
-        skills={PyTorch, TensorFlow, scikit-learn, Flask, FastAPI, React, Node, Next.js}
-    ] \\
-    \skillItem[
-        category={Data},
-        skills={PostgreSQL, MongoDB, Kafka, Spark, Hadoop, ZooKeeper, Prometheus, Grafana, JSON}
+        category={Methodologies},
+        skills={Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, SDLC, Configuration Management, Infrastructure Management}
     ]
 \end{skillsSection}
 
 % --------- Experience -----------
-\begin{experienceSection}{Professional Experience}
+ \begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Arizona State University},
+        location={Tempe, AZ},
+        position={Research Assistant, VISA Lab},
+        duration={Jun 2025 - Present}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Developing \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, and edge computing principles to evaluate custom software performance metrics and optimize deployment algorithms
+        \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with Kubernetes, implementing serverless functions for motion detection, frame extraction, face detection, and recognition
+    \end{itemize}
+
     \experienceItem[
         company={Arch Mortgage Insurance},
         location={Greensboro, NC},
@@ -68,9 +76,8 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing \textbf{daily Splunk storage usage by 40–50 GB} and improving \textbf{log search performance by 20\%}.
-        \item Enhanced log clarity and parsing efficiency by leveraging Cribl Parser and Mask functions, resulting in a streamlined raw field and reducing parsing time to 2-3 seconds per log.
-        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by\textbf{ 90\%}.
+        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing \textbf{daily Splunk storage usage by 40–50 GB} and improving \textbf{log search performance by 20\%}
+        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by\textbf{ 90\%}
         
     \end{itemize}
 
@@ -82,10 +89,10 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency.
-        \item Participated in regular on-call rotations, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, troubleshooting server issues, and resolving production alerts within 15 minutes, maintaining \textbf{99.99\%} service reliability.
-        \item Troubleshot and resolved \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines.
-        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, accelerating delivery of new UI and backend features in a fast-paced production environment.
+        \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency
+        \item Participated in regular on-call rotations, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, troubleshooting server issues, and resolving production alerts within 15 minutes, maintaining \textbf{99.99\%} service reliability
+        \item Troubleshot and resolved \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
+        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
 \end{experienceSection}
@@ -100,8 +107,8 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed a Firefox extension and a Go backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured SQL database.
-        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications.    
+        \item Developed a Firefox extension and a Go backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured SQL database
+        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications   
     \end{itemize}
 
     \projectItem[
@@ -111,19 +118,8 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Automated end-to-end AWS EC2 provisioning using Terraform, Ansible, Jenkins, and GitHub Actions, enabling reproducible infrastructure setup and hands-free web service deployments.
-        \item Built and optimized CI/CD pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services, eliminating manual intervention and resolving IAM and resource issues in production-like environments.
-    \end{itemize}
-
-    \projectItem[
-        title=Kubernetes based Data Processing Pipeline,
-        duration={Oct 2024 - Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Designed and deployed a scalable, near-real-time data pipeline on Kubernetes with Helm, enabling spatial analytics of NYC Taxi Rides for data-driven urban mobility insights.
-        \item Leveraged Kafka, Kafka Connect, ZooKeeper, and Neo4j for real-time ingestion and graph processing (PageRank, BFS), uncovering location importance and optimizing resource allocation.
+        \item Automated end-to-end AWS EC2 provisioning using Terraform, Ansible, Jenkins, and GitHub Actions, enabling reproducible infrastructure setup and hands-free web service deployments
+        \item Built and optimized CI/CD pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services, eliminating manual intervention and resolving IAM and resource issues in production-like environments
     \end{itemize}
 
     \projectItem[
@@ -133,8 +129,8 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed and deployed a Flask-based image recognition app using Gunicorn on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing.
-        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads.
+        \item Developed and deployed a Flask-based image recognition app using Gunicorn on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing
+        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads
     \end{itemize}
     
 \end{experienceSection}
