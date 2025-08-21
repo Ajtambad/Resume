@@ -42,15 +42,15 @@
 \begin{skillsSection}{Skills}
     \skillItem[
         category={Languages and Databases},
-        skills={Python, C++, Bash, PowerShell SQL (Postgres, MySQL), NoSQL (MongoDB), Go, Scala, HTML, JavaScript, Java}
+        skills={Python, C++, Bash, Powershell, SQL (MySQL, Postgres), NoSQL (MongoDB), Go, JavaScript, Java}
     ] \\
     \skillItem[
         category={Tools and Frameworks},
-        skills={AWS (EC2, ECR, S3, CloudFormation, Lambda, etc), Linux (RHEL, Ubuntu), Docker, Kubernetes, PostmanAPI, Nginx, Gunicorn, Flask, FastAPI, Node.js, Zookeeper, Splunk, Github Actions, Terraform, Ansible, Git (Version Control), Gitlab, Prometheus, Grafana, Jenkins, Cribl, Zabbix, Chef}
+        skills={AWS, Linux (RHEL, Ubuntu), Docker, Kubernetes, Nginx, Jenkins Flask, FastAPI, Node.js, Splunk, React, Angular, Github Actions, Terraform, Ansible, Git, Gitlab, Prometheus, Grafana, Zabbix, PyTorch, TensorFlow, Chef}
     ] \\
     \skillItem[
         category={Miscellaneous},
-        skills={Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, SDLC, DevOps, Configuration Management, Infrastructure as code, Incident Management}
+        skills={UNIX, Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, SDLC, Infrastructure Management, Incident Response, Risk Management, Machine Learning, TCP/IP}
     ]
 \end{skillsSection}
 
@@ -71,18 +71,18 @@
     \experienceItem[
         company={Arch Mortgage Insurance},
         location={Greensboro, NC},
-        position={Site Reliability Engineer Intern},
+        position={Site Reliability Engineer (SRE) Intern},
         duration={Jun 2024 - Aug 2024}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing \textbf{daily Splunk storage usage by 40–50 GB} and improving \textbf{log search performance by 20\%}
-        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by\textbf{ 90\%}
+        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing daily Splunk data ingestion by \textbf{40–50 GB} and improving \textbf{log search performance by 20\%}
+        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by \textbf{ 90\%}
         
     \end{itemize}
 
     \experienceItem[
-        company={Cerner Healthcare},
+        company={Cerner Healthcare (Oracle Health)},
         location={Bangalore, India},
         position={System Engineer - 1},
         duration={May 2021 - Jul 2023}
@@ -90,9 +90,9 @@
     \begin{itemize}
         \itemsep -6pt {}
         \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency
-        \item Participated in regular on-call rotations, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, troubleshooting server issues, and resolving production alerts within 15 minutes, maintaining \textbf{99.99\%} service reliability
-        \item Performed troubleshooting \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
-        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, accelerating delivery of new UI and backend features in a fast-paced production environment
+        \item Participated in regular on-call rotations with cross-functional teams, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, quality assurance, and resolving production alerts, maintaining \textbf{99.99\%} service reliability
+        \item Troubleshot and performed root cause analysis \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
+        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
 \end{experienceSection}
@@ -108,7 +108,7 @@
         \vspace{-0.5em}
         \itemsep -6pt {}
         \item Developed a Firefox extension and a \textbf{Go} backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured \textbf{SQL database}
-        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications   
+        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications, and working on making it full stack. 
     \end{itemize}
 
     \projectItem[
@@ -118,7 +118,7 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Automated end-to-end AWS EC2 provisioning using \textbf{Terraform}, \textbf{Ansible}, \textbf{Jenkins}, and \textbf{GitHub Actions}, enabling reproducible infrastructure setup and hands-free web service deployments
+        \item Automated end-to-end AWS EC2 provisioning and cloud infrastructure management using \textbf{Terraform}, \textbf{Ansible}, \textbf{Jenkins}, and \textbf{GitHub Actions}, enabling infrastructure setup and hands-free web service deployments based on version control changes.
         \item Built and optimized CI/CD pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services, eliminating manual intervention and resolving IAM and resource issues in production-like environments
     \end{itemize}
 
@@ -129,7 +129,7 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing
+        \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing using AWS service API.
         \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads
     \end{itemize}
     
