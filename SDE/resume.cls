@@ -133,14 +133,6 @@
     \end{center}%
 }%
 % -----------------------------------
-
-% ------------ Summary --------------
-\newcommand{\summary}[1]{%
-    \sectionTitle{Summary}%
-    #1
-}%
-% -----------------------------------
-
 % ------------ Education ------------
 \newenvironment{educationSection}[1]{%
     \sectionTitle{#1}%
@@ -232,3 +224,10 @@
 }%
 
 % ----------------------------------------
+
+% ------------ Achievements --------------
+\newcommand{\achievements}[1]{%
+    \sectionTitle{Achievements}%
+    #1
+}%
+% -----------------------------------
