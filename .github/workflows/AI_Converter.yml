@@ -9,6 +9,9 @@ on:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: AI
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v2
@@ -23,22 +26,21 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
-
-      - name: Rename file
-        run: |
-          mv AI/AI.pdf AI/Amogh_Tambad_Resume.pdf
-
       - name: Checkout main branch explicitly
         run: |
           git checkout main
-
+      
+      - name: Rename file
+        run: |
+          mv ../AI.pdf Amogh_Tambad_Resume.pdf
+        
       - name: Commit and Push PDF
         run: |
           git pull
-          git add AI/Amogh_Tambad_Resume.pdf
-          git diff --quiet && echo "No changes to commit" && exit 0
+          git add -f Amogh_Tambad_Resume.pdf
           git commit -m "Compiled PDF on $(date -d "$M" '+%m')/$(date -d "$D" '+%d')/$(date -d "$Y" '+%Y') - $(date +%s)"
           git push
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

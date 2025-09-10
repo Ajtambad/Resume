@@ -14,6 +14,7 @@
 % --------- Contact Information -----------
 \introduction[
     fullname={Amogh Jagadish Tambad},
+    location = {San Francisco, CA},
     email={tambadamogh@gmail.com},
     phone={(480) 876-5096},
     linkedin={linkedin.com/in/ajtambad},
@@ -41,16 +42,28 @@
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages and Databases},
-        skills={Python, C++, Bash, Powershell, SQL (MySQL, Postgres), NoSQL (MongoDB), Go, JavaScript, Java}
+        category={Programming Languages},
+        skills={Python, C++ Go, Java, JavaScript, Typescript, Scala, HTML, XML}
     ] \\
     \skillItem[
-        category={Tools and Frameworks},
-        skills={AWS, Linux (RHEL, Ubuntu), Docker, Kubernetes, Nginx, Jenkins Flask, FastAPI, Node.js, Splunk, React, Angular, Github Actions, Terraform, Ansible, Git, Gitlab, Prometheus, Grafana, Zabbix, PyTorch, TensorFlow, Chef}
+        category={Technologies},
+        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR), TensorFlow, Docker, Kubernetes, Terraform, Knative, Jenkins, Github Actions, Chef React, Angular, Flask, Node.js}
+    ] \\
+    \skillItem[
+        category={Tools},
+        skills={Linux (RHEL, Ubuntu), Git (Version Control), Github, Ansible, Gitlab, Nginx, Kafka, Redis, Prometheus, Postman, Cursor, CoPilot, Claude Code}
+    ] \\
+    \skillItem[
+        category={Database Systems},
+        skills={SQL(MySQL, PostgreSQL), NoSQL (MongoDB)}
+    ] \\
+    \skillItem[
+        category={LLM/GenAI Frameworks},
+        skills={MCP, LangChain, LangGraph, RAG, VectorDBs (FAISS, ChromaDB)}
     ] \\
     \skillItem[
         category={Miscellaneous},
-        skills={UNIX, Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, SDLC, Infrastructure Management, Incident Response, Risk Management, Machine Learning, TCP/IP}
+        skills={Distributed Systems, RESTful APIs, Microservices Architecture, Object-Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure-as-code, Cloud Infrastructure, Communication Skills, Collaboration, Writing}
     ]
 \end{skillsSection}
 
@@ -58,14 +71,14 @@
  \begin{experienceSection}{Professional Experience}
     \experienceItem[
         company={Arizona State University},
-        location={Tempe, AZ},
+        location={Remote},
         position={Research Assistant, VISA Lab},
         duration={Jun 2025 - Present}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Developing \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, and edge computing principles to evaluate custom software performance metrics and optimize deployment algorithms
-        \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with \textbf{Kubernetes}, implementing serverless functions for motion detection, frame extraction, face detection, and recognition
+        \item Developed \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, \textbf{Kubernetes}, and \textbf{FaaS} principles to evaluate custom edge computing applications, providing a comprehensive report on 6+ metrics.
+        \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with Kubernetes, processing 10,000+ frames per minute.
     \end{itemize}
 
     \experienceItem[
@@ -91,7 +104,7 @@
         \itemsep -6pt {}
         \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency
         \item Participated in regular on-call rotations with cross-functional teams, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, quality assurance, and resolving production alerts, maintaining \textbf{99.99\%} service reliability
-        \item Troubleshot and performed root cause analysis on \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
+        \item Troubleshot and performed root cause analysis \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
         \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
@@ -100,20 +113,9 @@
 % --------- Projects -----------
 \begin{experienceSection}{Academic projects}
 
-        \projectItem[
-        title=JobTrail - Go based job tracking,
-        duration={Jun 2024 - Present},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Developed a Firefox extension and a \textbf{Go} backend (Gorilla Mux, database/sql) to capture and ingest job application data, storing entries in a structured \textbf{SQL database}
-        \item Added signal-based graceful shutdown to export data to CSV and truncate the table automatically, saving ~1–2 hours/week otherwise spent manually tracking applications, and working on making it full stack. 
-    \end{itemize}
-
     \projectItem[
         title={End-to-End Deployment Automation},
-        duration={Mar 2025 - Apr 2025},
+        duration={Apr 2025},
     ]
     \begin{itemize}
         \vspace{-0.5em}
@@ -124,13 +126,13 @@
 
     \projectItem[
         title=AWS-Based Face Recognition App,
-        duration={Feb 2024 - May 2024},
+        duration={May 2024},
     ]
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP-based uploads and forwarding images to S3 via SQS for asynchronous processing using AWS service API.
-        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on SQS queue depth, ensuring efficient, real-time image processing under varying workloads
+        \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP REST API based uploads and forwarding images to \textbf{S3} via \textbf{SQS} for asynchronous processing using AWS service API.
+        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on \textbf{SQS} queue depth, ensuring efficient, real-time image processing under varying workloads
     \end{itemize}
     
 \end{experienceSection}

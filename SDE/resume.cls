@@ -8,7 +8,7 @@
 
 \LoadClass[9pt,letterpaper]{article} % Font size and paper type
 
-\usepackage[left=0.5in,top=0.4in,right=0.5in,bottom=0.4in]{geometry} % set document margins
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % set document margins
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 
 \usepackage{etoolbox}
@@ -34,10 +34,11 @@
 % ------------ Utilities ------------
 
 \def \separator {
-    \textbf{\Large\textbullet}
+    \textbf{\Large\text{\textbar}}
 }
 
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}%
+\newcommand{\location}[1]{\href{}{#1}}%
 \newcommand{\profilelink}[1]{\href{https://#1}{#1}}%
 
 \newcommand{\isA}[1]{
@@ -58,7 +59,7 @@
 % ------------- Header --------------
 \newcommand\printNameTitle[1]{%
     \begingroup
-        \hfill{\MakeUppercase{\Huge\bfseries #1}}\hfill
+        \hfill{\MakeUppercase{\Huge \bfseries #1}}\hfill
         \break
         \vspace{-0.5em}
         % \hrule
@@ -67,6 +68,7 @@
 
 \newkeycommand{\introduction}[
     fullname,
+    location,
     email,
     phone,
     linkedin,
@@ -78,17 +80,31 @@
             \expandafter\ifstrequal\expandafter{phone}{}{}% Contact number
             {%
                 \ifcommandkey{phone}{\commandkey{phone}}{}%
-                \expandafter\ifstrequal\expandafter{email}{}%
+                \expandafter\ifstrequal\expandafter{location}{}%
                 {%
-                    \expandafter\ifstrequal\expandafter{linkedin}{}%
+                    \expandafter\ifstrequal\expandafter{email}{}%
                     {%
-                        \expandafter\ifstrequal\expandafter{github}{}%
+                        \expandafter\ifstrequal\expandafter{linkedin}{}%
                         {%
-                            % empty %
+                            \expandafter\ifstrequal\expandafter{github}{}%
+                            {%
+                                % empty %
+                            }{\separator}%
                         }{\separator}%
                     }{\separator}%
                 }{\separator}%
             }% Contact number field ends here
+            \expandafter\ifstrequal\expandafter{location}{}{}% Location
+            {%
+                \location{\commandkey{location}}%
+                \expandafter\ifstrequal\expandafter{email}{}%
+                {%
+                    \expandafter\ifstrequal\expandafter{linkedin}{}%
+                    {%
+                        % empty %
+                    }{\separator}%
+                }{\separator}%
+            } % Location field ends here
             \expandafter\ifstrequal\expandafter{email}{}{}% Email
             {%
                 \email{\commandkey{email}}%
@@ -111,11 +127,11 @@
             \expandafter\ifstrequal\expandafter{github}{}{}% Github
             {%
                 \profilelink{\commandkey{github}}%
+                \newline
             }% Github field ends here
         }
     \end{center}%
 }%
-
 % -----------------------------------
 
 % ------------ Summary --------------
@@ -123,7 +139,6 @@
     \sectionTitle{Summary}%
     #1
 }%
-
 % -----------------------------------
 
 % ------------ Education ------------
@@ -153,7 +168,7 @@
     %     \commandkey{college}
     % } \\ % line end
     {% line 4
-        Relevant coursework: \commandkey{coursework}%
+        Coursework: \commandkey{coursework}%
     }% line end
 }%
 
