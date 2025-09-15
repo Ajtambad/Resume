@@ -39,33 +39,6 @@
         coursework={Data Structure and Algorithms, Operating Systems},
     ]
 \end{educationSection}
-% --------- Skills -----------
-\begin{skillsSection}{Skills}
-    \skillItem[
-        category={Programming Languages},
-        skills={Python, C++ Go, Java, JavaScript, Typescript, Scala, HTML, XML}
-    ] \\
-    \skillItem[
-        category={Technologies},
-        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR, CloudWatch), GCP, TensorFlow, Docker, Kubernetes, Terraform, Knative, Jenkins, Github Actions, React, Angular, Flask, Node.js, GCP}
-    ] \\
-    \skillItem[
-        category={Tools},
-        skills={Linux (RHEL, Ubuntu), Unix, Git (Version Control), Bash, Github, Ansible, Chef, Gitlab, Nginx, Kafka, Redis, Prometheus, Grafana, Postman, Cursor, CoPilot, Claude Code}
-    ] \\
-    \skillItem[
-        category={Database Systems},
-        skills={SQL(MySQL, PostgreSQL), NoSQL (MongoDB)}
-    ] \\
-    \skillItem[
-        category={LLM/GenAI Frameworks},
-        skills={MCP, LangChain, LangGraph, RAG, VectorDBs (FAISS, ChromaDB)}
-    ] \\
-    \skillItem[
-        category={Miscellaneous},
-        skills={Distributed Systems, RESTful APIs, Microservices, Object Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure as code (IaC), DevOps, Cloud Infrastructure, Communication Skills, Collaboration, Writing}
-    ]
-\end{skillsSection}
 
 % --------- Experience -----------
  \begin{experienceSection}{Professional Experience}
@@ -105,7 +78,7 @@
         \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency
         \item Participated in regular on-call rotations with cross-functional teams, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, quality assurance, and resolving production alerts, maintaining \textbf{99.99\%} service reliability
         \item Troubleshot and performed root cause analysis \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
-        \item Managed \textbf{300+} bi-weekly microservice deployments, including Splunk and non-Splunk-based services, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
+        \item Managed \textbf{300+} bi-weekly microservice deployments, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
 \end{experienceSection}
@@ -114,31 +87,61 @@
 \begin{experienceSection}{Academic projects}
 
     \projectItem[
-        title={End-to-End Deployment Automation},
+        title={End-to-end Deployment Automation},
         duration={Apr 2025},
     ]
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
 
-        \item Automated end-to-end AWS EC2 provisioning and cloud infrastructure management using \textbf{Terraform}, \textbf{Ansible}, \textbf{Jenkins}, and \textbf{GitHub
-Actions}, enabling infrastructure setup and hands-free web service deployments based on version control changes.
-        \item Built and optimized \textbf{CI/CD} pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services,
+        \item Integrated \textbf{Terraform}, \textbf{Ansible}, with \textbf{Jenkins}, and \textbf{GitHub Actions} based CI/CD pipeline to provision AWS EC2 instances and deploy web services within \textbf{1 minute} of version control changes
+        \item Optimized CI/CD pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services,
         eliminating manual intervention and resolving \textbf{IAM} and resource issues in production-like environments
     \end{itemize}
 
     \projectItem[
-        title=AWS-Based Face Recognition App,
+        title=AWS-based Face Recognition App,
         duration={May 2024},
     ]
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
         \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP REST API based uploads and forwarding images to \textbf{S3} via \textbf{SQS} for asynchronous processing using AWS service API.
-        \item Designed an auto-scaling app tier that scaled up to 20 EC2 instances based on \textbf{SQS} queue depth, ensuring efficient, real-time image processing under varying workloads
+        \item Designed an auto-scaling app tier that scaled up to \textbf{20} EC2 instances based on \textbf{SQS} queue depth, ensuring efficient, real-time image processing under varying workloads
+    \end{itemize}
+
+    \projectItem[
+        title=Kubernetes-based Data Processing Pipeline,
+        duration={Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Engineered a highly scalable data processing pipeline using \textbf{Apache Kafka} and \textbf{Neo4j} that processes \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial analytics query time by \textbf{60\%} and enabling real-time traffic pattern identification
     \end{itemize}
     
 \end{experienceSection}
+
+% --------- Skills -----------
+\begin{skillsSection}{Skills}
+    \skillItem[
+        category={Languages},
+        skills={Python, C++ Go, Java, JavaScript, Typescript, Scala, HTML, XML}
+    ] \\
+    \skillItem[
+        category={Cloud Technologies},
+        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR, CloudWatch), TensorFlow, Docker, Kubernetes, Terraform, Jenkins, Github Actions, GCP}
+    ] \\
+    \skillItem[
+        category={Tools},
+        skills={Linux (RHEL, Ubuntu), Unix, Git (Version Control), Bash, Github, Ansible, Chef, Gitlab, Prometheus, Grafana, Postman}
+    ] \\
+    \skillItem[
+        category={Miscellaneous},
+        skills={Distributed Systems, RESTful APIs, Microservices, Object Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure as code (IaC), DevOps, Cloud Infrastructure, Collaboration, Writing}
+    ]
+\end{skillsSection}
+
 
 
 \end{document}
