@@ -47,7 +47,7 @@
     ] \\
     \skillItem[
         category={Technologies},
-        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR), Pandas, Numpy, Spark, Docker, Kubernetes, React, Angular, Flask, Node.js, Terraform, Jenkins}
+        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR), Pandas, Numpy, Spark, Docker, Kubernetes, React, Angular, Flask, Node.js, Terraform, Jenkins, ArgoCD}
     ] \\
     \skillItem[
         category={Database Systems},
@@ -55,7 +55,7 @@
     ] \\
     \skillItem[
         category={Tools},
-        skills={Linux, Git (Version Control), Github, Nginx, Kafka, Redis, Prometheus, Postman, Cursor, CoPilot, Claude Code}
+        skills={Linux, Unix, Git (Version Control), Github, Nginx, Kafka, Redis, Prometheus, Postman, Cursor, CoPilot, Claude Code}
     ] \\
     \skillItem[
         category={LLM/GenAI Frameworks},
@@ -63,9 +63,50 @@
     ] \\
     \skillItem[
         category={Miscellaneous},
-        skills={Distributed Systems, RESTful APIs, Microservices, Object-Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure-as-code, Machine Learning, Web Services}
+        skills={Distributed Systems, RESTful APIs, Microservices, Object-Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure-as-code, Machine Learning, Web Services, Communication, Problem-Solving }
     ]
 \end{skillsSection}
+
+% --------- Projects -----------
+\begin{experienceSection}{Projects}
+
+    \projectItem[
+        title=JobTrail - Go-based Job Tracker,
+        duration={May 2025},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Developed a full-stack job tracking application using \textbf{Go} backend (Gorilla Mux), \textbf{SQLite} database, and \textbf{JavaScript} browser extension, reducing manual job application logging time by 80\% through automated data capture from 15+ major job boards
+        \item Built \textbf{RESTful API} with sub-200ms response times supporting \textbf{500+} job records with CRUD operations and real-time filtering, via responsive web interface using \textbf{Bootstrap} and \textbf{vanilla} JavaScript.
+        \item Engineered cross-platform deployment solution with optimized database queries and binary distributions for Windows, Mac, and Linux systems enabling zero-dependency installation
+    \end{itemize}
+
+    \projectItem[
+        title=RAG Implementation for arXiv Papers,
+        duration={Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Devised a multimodal pipeline using \textbf{Python} to extract and vectorize content from \textbf{2000+} arXiv papers, implementing \textbf{CLIP} and text embedding models, \textbf{DynamoDB} indexing and vector database storage
+        \item Implemented a similarity search and summarization pipeline with DynamoDB and GPT-4o mini to deliver concise, contextually relevant responses to user queries with an average response time of under \textbf{2 seconds}.
+    \end{itemize}
+
+    
+    \projectItem[
+        title=AWS-Based Face Recognition App,
+        duration={May 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Created and deployed a scalable \textbf{Flask} web application using \textbf{Python} and \textbf{Gunicorn} on\textbf{ AWS EC2}, implementing HTTP-based image uploads through asynchronous processing pipeline leveraging \textbf{S3} storage and \textbf{SQS} message queuing
+        \item Architected an \textbf{auto-scaling} infrastructure that dynamically scales up to 20 EC2 instances based on SQS queue depth metrics, ensuring optimal performance and cost-efficiency for real-time image processing under variable workloads
+    \end{itemize}
+
+
+\end{experienceSection}
 
 % --------- Experience -----------
 
@@ -97,7 +138,7 @@
     \end{itemize}
 
     \experienceItem[
-        company={Cerner Healthcare},
+        company={Cerner Healthcare (Oracle Cerner)},
         location={Bangalore, KA},
         position={Software Engineer},
         duration={May 2021 - Jul 2023}
@@ -111,48 +152,5 @@
     \end{itemize}
 
 \end{experienceSection}
-
-% --------- Projects -----------
-\begin{experienceSection}{Projects}
-
-    \projectItem[
-        title=RAG Implementation for arXiv Papers,
-        duration={Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Devised a multimodal pipeline using \textbf{Python} to extract and vectorize content from \textbf{2000+} arXiv papers, implementing \textbf{CLIP} and text embedding models, \textbf{DynamoDB} indexing and vector database storage
-        \item Implemented a similarity search and summarization pipeline with DynamoDB and GPT-4o mini to deliver concise, contextually relevant responses to user queries with an average response time of under \textbf{2 seconds}.
-    \end{itemize}
-
-    
-    \projectItem[
-        title=AWS-Based Face Recognition App,
-        duration={May 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Created and deployed a scalable \textbf{Flask} web application using \textbf{Python} and \textbf{Gunicorn} on\textbf{ AWS EC2}, implementing HTTP-based image uploads through asynchronous processing pipeline leveraging \textbf{S3} storage and \textbf{SQS} message queuing
-        \item Architected an \textbf{auto-scaling} infrastructure that dynamically scales up to 20 EC2 instances based on SQS queue depth metrics, ensuring optimal performance and cost-efficiency for real-time image processing under variable workloads
-    \end{itemize}
-
-    \projectItem[
-        title=Kubernetes based Data Processing Pipeline,
-        duration={Oct 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Built a highly scalable data processing pipeline using \textbf{Apache Kafka} and \textbf{Neo4j} that processes \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial analytics query time by \textbf{60\%} and enabling real-time traffic pattern identification.
-        \item Tested the pipeline on \textbf{PageRank} and \textbf{BFS} algorithms on the resulting neo4j graph database, establishing individual and relative importance of locations. 
-
-
-    \end{itemize}
-
-
-\end{experienceSection}
-
 
 \end{document}
