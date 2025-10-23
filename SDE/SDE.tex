@@ -14,7 +14,7 @@
 % --------- Contact Information -----------
 \introduction[
     fullname={Amogh Jagadish Tambad},
-    location={San Francisco, CA},
+    location={Tempe, AZ},
     email={tambadamogh@gmail.com},
     phone={(480) 876-5096},
     linkedin={linkedin.com/in/ajtambad},
@@ -38,34 +38,50 @@
         program={Bachelor of Technology, Computer Science},
         coursework={Data Structure and Algorithms, Operating Systems, Cloud Computing, Computer Networks},
     ]
-\end{educationSection}
-% --------- Skills -----------
-\begin{skillsSection}{Skills}
-    \skillItem[
-        category={Languages},
-        skills={Python, C++ Go, Java, JavaScript, Typescript, Scala, HTML, XML}
-    ] \\
-    \skillItem[
-        category={Technologies},
-        skills={AWS (EC2, Lambda, S3, ECS, CloudFormation, EKS, ECR), Pandas, Numpy, Spark, Docker, Kubernetes, React, Angular, Flask, Node.js, Terraform, Jenkins, ArgoCD}
-    ] \\
-    \skillItem[
-        category={Database Systems},
-        skills={SQL(MySQL, PostgreSQL), NoSQL (MongoDB)}
-    ] \\
-    \skillItem[
-        category={Tools},
-        skills={Linux, Unix, Git (Version Control), Github, Nginx, Kafka, Redis, Prometheus, Postman, Cursor, CoPilot, Claude Code}
-    ] \\
-    \skillItem[
-        category={LLM/GenAI Frameworks},
-        skills={MCP, LangChain, LangGraph, RAG, VectorDBs (FAISS, ChromaDB)}
-    ] \\
-    \skillItem[
-        category={Miscellaneous},
-        skills={Distributed Systems, RESTful APIs, Microservices, Object-Oriented Programming, Agile, Test Driven Development (TDD), Infrastructure-as-code, Machine Learning, Web Services, Communication, Problem-Solving }
+
+% --------- Experience -----------
+
+    \begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        company={Arizona State University},
+        location={Remote},
+        position={Research Assistant, VISA Lab},
+        duration={Jun 2025 - Present}
     ]
-\end{skillsSection}
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Developing \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, \textbf{Kubernetes}, and FaaS principles to evaluate custom edge computing applications, providing a comprehensive report on 6+ metrics.
+    \end{itemize}
+
+
+    \experienceItem[
+        company={Arch Mortgage Insurance},
+        location={Greensboro, NC},
+        position={Software Engineer (Infrastructure \& Reliability) Intern},
+        duration={Jun 2024 - Aug 2024}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Built a \textbf{JavaScript} and \textbf{Cribl Stream} based scalable data processing solution and created 10+ conditional pipelines for log filtering and transformation, decreasing Splunk utilization by 30\% and improving search speed. 
+        \item Engineered a container image synchronization system through \textbf{Ansible} automation scripts and \textbf{Red Hat registry} APIs that integrates with \textbf{Nexus Repository} for artifact management, eliminating 90\% of manual update processes
+        
+    \end{itemize}
+
+    \experienceItem[
+        company={Cerner Healthcare (Oracle Cerner)},
+        location={Bangalore, KA},
+        position={Software Engineer (Systems)},
+        duration={May 2021 - Jul 2023}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Designed cloud migration scripts and data transformation pipelines to migrate 80\% of enterprise data from on-premise infrastructure to \textbf{AWS}, thereby enhancing access flexibility, security, and cost-efficiency
+        \item Automated the monitoring and\textbf{} alerting systems with \textbf{Zabbix} and \textbf{Splunk} APIs, developing custom dashboards and incident response automation that sped production resolution by 30\%
+        \item Implemented \textbf{RBAC} with AWS IAM and Zabbix User roles, enhancing security and reducing login errors by 60\%, while streamlining user access management across the system.
+        \item Deployed \textbf{300+} bi-weekly microservice releases, tracked via \textbf{JIRA}, through \textbf{Chef} configuration management and custom deployment scripts, accelerating delivery of new UI and backend features
+    \end{itemize}
+
+\end{experienceSection}
 
 % --------- Projects -----------
 \begin{experienceSection}{Projects}
@@ -77,9 +93,7 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Developed a full-stack job tracking application using \textbf{Go} backend (Gorilla Mux), \textbf{SQLite} database, and \textbf{JavaScript} browser extension, reducing manual job application logging time by 80\% through automated data capture from 15+ major job boards
-        \item Built \textbf{RESTful API} with sub-200ms response times supporting \textbf{500+} job records with CRUD operations and real-time filtering, via responsive web interface using \textbf{Bootstrap} and \textbf{vanilla} JavaScript.
-        \item Engineered cross-platform deployment solution with optimized database queries and binary distributions for Windows, Mac, and Linux systems enabling zero-dependency installation
+        \item Developed a full-stack job tracking application using \textbf{Go} backend (Gorilla Mux), \textbf{SQLite} database, and \textbf{JavaScript} browser extension, reducing manual job application logging time by 80\% through automated data capture from 5+ major job boards
     \end{itemize}
 
     \projectItem[
@@ -108,49 +122,33 @@
 
 \end{experienceSection}
 
-% --------- Experience -----------
-
-    \begin{experienceSection}{Professional Experience}
-    % \experienceItem[
-    %     company={Arizona State University},
-    %     location={Remote},
-    %     position={Research Assistant, VISA Lab},
-    %     duration={Jun 2025 - Present}
-    % ]
-    % \begin{itemize}
-    %     \itemsep -6pt {}
-    %     \item Developed \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, \textbf{Kubernetes}, and FaaS principles to evaluate custom edge computing applications, providing a comprehensive report on 6+ metrics.
-    %     \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with Kubernetes, processing 10,000+ frames per minute.
-    % \end{itemize}
-
-
-    \experienceItem[
-        company={Arch Mortgage Insurance},
-        location={Greensboro, NC},
-        position={Software Engineer Intern},
-        duration={Jun 2024 - Aug 2024}
+\end{educationSection}
+% --------- Skills -----------
+\begin{skillsSection}{Skills}
+    \skillItem[
+        category={Languages & Database},
+        skills={Python, C++ Go, Java, JavaScript, Typescript, HTML, CSS, SQL(MySQL, Postgres), NoSQL (MongoDB)}
+    ] \\
+    \skillItem[
+        category={Tools},
+        skills={Linux, Unix, Git (Version Control), Pandas, Numpy, Spark, Jenkins, ArgoCD,  Nginx, Kafka, Redis, Prometheus, Cursor}
+    ] \\
+    \skillItem[
+        category={Cloud Technologies},
+        skills={Docker, Kubernetes, Terraform, Helm, AWS(EC2, S3 Lambda, ECS, CloudFormation, EKS), GCP}
+    ] \\
+    \skillItem[
+        category={Web Frameworks},
+        skills={Flask, FastAPI, Gorilla Mux, Node.js, Spring Boot, React.js}
+    ] \\
+    \skillItem[
+        category={AI/ML Frameworks},
+        skills={PyTorch, TensorFlow, MCP, LangChain, LangGraph, RAG, VectorDBs (FAISS, ChromaDB)}
+    ] \\
+    \skillItem[
+        category={Miscellaneous},
+        skills={Distributed Systems, RESTful APIs, Microservices, Object-Oriented Programming, Agile, Data Structures }
     ]
-    \begin{itemize}
-        \itemsep -6pt {}
-        \item Built a \textbf{JavaScript} and \textbf{Cribl Stream} based scalable data processing solution and created 10+ conditional pipelines for log filtering and transformation, implementing custom business logic to filter and route logs from \textbf{OpenShift} pods to Splunk
-        \item Engineered a container image synchronization system through \textbf{Ansible} automation scripts and \textbf{Red Hat registry} APIs that integrates with \textbf{Nexus Repository} for artifact management, eliminating 90\% of manual update processes
-        
-    \end{itemize}
-
-    \experienceItem[
-        company={Cerner Healthcare (Oracle Cerner)},
-        location={Bangalore, KA},
-        position={Software Engineer},
-        duration={May 2021 - Jul 2023}
-    ]
-    \begin{itemize}
-        \itemsep -6pt {}
-        \item Designed cloud migration scripts and data transformation pipelines to migrate 80\% of enterprise data from on-premises infrastructure to AWS, thereby enhancing access flexibility, security, and cost-efficiency
-        \item Automated the monitoring and alerting systems with \textbf{Zabbix} and \textbf{Splunk} APIs, developing custom dashboards and incident response automation that sped production resolution by 30\%
-        \item Troubleshot and resolved \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
-        \item Deployed \textbf{300+} bi-weekly microservice releases, tracked via \textbf{JIRA}, through \textbf{Chef} configuration management and custom deployment scripts, accelerating delivery of new UI and backend features
-    \end{itemize}
-
-\end{experienceSection}
+\end{skillsSection}
 
 \end{document}
