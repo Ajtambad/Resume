@@ -14,7 +14,7 @@
 % --------- Contact Information -----------
 \introduction[
     fullname={Amogh Jagadish Tambad},
-    location={Tempe, AZ},
+    location={San Francisco, CA},
     email={tambadamogh@gmail.com},
     phone={(480) 876-5096},
     linkedin={linkedin.com/in/ajtambad},
@@ -64,8 +64,8 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Built a \textbf{JavaScript} and \textbf{Cribl Stream} based scalable data processing solution and created 10+ conditional pipelines for log filtering and transformation, decreasing Splunk utilization by 30\% and improving search speed. 
-        \item Engineered a container image synchronization system through \textbf{Ansible} automation scripts and \textbf{Red Hat registry} APIs that integrates with \textbf{Nexus Repository} for artifact management, eliminating 90\% of manual update processes
+        \item Architected a \textbf{JavaScript-based} data processing pipeline with \textbf{Cribl Stream}, processing 80GB+ daily logs through 10+ conditional routing rules, reducing Splunk ingestion costs by 30\%
+        \item Developed a container image synchronization system using \textbf{Python} and \textbf{Ansible}, integrating Red Hat Registry APIs with Nexus Repository to automate artifact management and eliminate 90\% of manual container updates
         
     \end{itemize}
 
@@ -77,10 +77,10 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Designed cloud migration scripts and data transformation pipelines to migrate 80\% of enterprise data from on-premise infrastructure to \textbf{AWS}, thereby enhancing access flexibility, security, and cost-efficiency
-        \item Automated the monitoring and\textbf{} alerting systems with \textbf{Zabbix} and \textbf{Splunk} APIs, developing custom dashboards and incident response automation that sped production resolution by 30\%
-        \item Implemented \textbf{RBAC} with AWS IAM and Zabbix User roles, enhancing security and reducing login errors by 60\%, while streamlining user access management across the system.
-        \item Deployed \textbf{300+} bi-weekly microservice releases, tracked via \textbf{JIRA}, through \textbf{Chef} configuration management and custom deployment scripts, accelerating delivery of new UI and backend features
+        \item Developed and maintained \textbf{Java-based} microservices handling 5M+ daily healthcare transactions, implementing \textbf{RESTful APIs} and event-driven architectures that reduced patient data retrieval latency by 40%
+        \item Built cloud-native data transformation pipelines in \textbf{Python} to migrate 80\% of enterprise data (500+ TB) from on-premise infrastructure to AWS, designing \textbf{ETL} workflows that ensured zero data loss and 99.9\% uptime
+        \item Engineered automated monitoring solutions using Python and \textbf{Splunk} APIs, developing custom alerting logic and incident response workflows that reduced mean time to resolution (MTTR) by 30\%
+        \item Collaborated with cross-functional teams to deliver \textbf{300+} microservice releases, implementing feature flags, \textbf{A/B testing} frameworks, and rollback mechanisms that improved deployment safety and enabled rapid iteration
     \end{itemize}
 
 \end{experienceSection}
@@ -89,7 +89,18 @@
 \begin{experienceSection}{Projects}
 
     \projectItem[
-        title=JobTrail - Go-based Job Tracker,
+        title={TalkDoc - AI-based Document Filler | Python, FastAPI, React, OpenAI GPT-4},
+        duration={Nov 2025},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Built an AI-powered web application using \textbf{FastAPI} and \textbf{React} that automates document form completion through conversational interactions, leveraging\textbf{ OpenAI GPT-4} for natural language understanding and intelligent question generation
+        \item Implemented dynamic conversation flows and document generation, reducing form completion time by \textbf{40\%} while achieving \textbf{90\%+ accuracy} in mapping conversational responses to structured document fields
+    \end{itemize}
+
+    \projectItem[
+        title={JobTrail - Go-based Job Tracker | Go, Javascript, SQLite},
         duration={May 2025},
     ]
     \begin{itemize}
@@ -99,8 +110,8 @@
     \end{itemize}
 
     \projectItem[
-        title=RAG Implementation for arXiv Papers,
-        duration={Nov 2024},
+        title={RAG Implementation for arXiv Papers,
+        duration | Python, DynamoDB, CLIP}, duration={Nov 2024},
     ]
     \begin{itemize}
         \vspace{-0.5em}
@@ -110,16 +121,7 @@
     \end{itemize}
 
     
-    \projectItem[
-        title=AWS-Based Face Recognition App,
-        duration={May 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Created and deployed a scalable \textbf{Flask} web application using \textbf{Python} and \textbf{Gunicorn} on\textbf{ AWS EC2}, implementing HTTP-based image uploads through asynchronous processing pipeline leveraging \textbf{S3} storage and \textbf{SQS} message queuing
-        \item Architected an \textbf{auto-scaling} infrastructure that dynamically scales up to 20 EC2 instances based on SQS queue depth metrics, ensuring optimal performance and cost-efficiency for real-time image processing under variable workloads
-    \end{itemize}
+    
 
 
 \end{experienceSection}
@@ -127,29 +129,34 @@
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages \& Database},
-        skills={Python, C++, Go, Java, JavaScript, Typescript, HTML, CSS, SQL(MySQL, Postgres), NoSQL (MongoDB)}
+        category={Languages},
+        skills={Python, Go, Java, JavaScript/TypeScript, C++, SQL}
     ] \\
     \skillItem[
-        category={Tools},
-        skills={Linux, Unix, Git (Version Control), Pandas, Numpy, Spark, Jenkins, ArgoCD,  Nginx, Kafka, Redis, Prometheus, Cursor}
+        category={Web \& APIs},
+        skills={Flask, FastAPI, Spring Boot, Node.js, React.js, REST/GraphQL APIs}
     ] \\
     \skillItem[
-        category={Cloud Technologies},
-        skills={Docker, Kubernetes, Terraform, Helm, AWS(EC2, S3 Lambda, ECS, CloudFormation, EKS), GCP}
+        category={Databases},
+        skills={PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Vector DBs (FAISS, ChromaDB)}
+    ]\\
+    \skillItem[
+        category={Cloud \& Containers},
+        skills={AWS (EC2, S3, Lambda, EKS, SQS), Docker, Kubernetes, Terraform, Helm}
     ] \\
     \skillItem[
-        category={Web Frameworks},
-        skills={Flask, FastAPI, Gorilla Mux, Node.js, Spring Boot, React.js}
+        category={DevOps \& Tools},
+        skills={Git, Jenkins, ArgoCD, Kafka, Linux/Unix, Ansible, Infrastructure as Code}
     ] \\
     \skillItem[
-        category={AI/ML Frameworks},
-        skills={PyTorch, TensorFlow, MCP, LangChain, LangGraph, RAG, VectorDBs (FAISS, ChromaDB)}
+        category={Monitoring},
+        skills={Splunk, Zabbix, Prometheus, Cribl}
     ] \\
     \skillItem[
-        category={Miscellaneous},
-        skills={Distributed Systems, RESTful APIs, Microservices, Object-Oriented Programming, Agile, Data Structures }
-    ]
+        category={AI/ML},
+        skills={PyTorch, TensorFlow, LangChain, LangGraph, RAG}
+    ]\\
+    
 \end{skillsSection}
 
 \end{document}
