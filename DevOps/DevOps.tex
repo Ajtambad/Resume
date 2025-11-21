@@ -29,14 +29,14 @@
         grade={4.00 GPA},
         program={Master of Science, Computer Science},
         coursework={Cloud Computing, Data Processing at Scale, Data Mining, Software Security},
-    ]
+    ] % ASU
 
     \educationItem[
         university={REVA University, Bangalore, India},
         graduation={May 2021},
         grade={3.77 GPA},
         program={Bachelor of Technology, Computer Science},
-        coursework={Data Structure and Algorithms, Operating Systems},
+        coursework={Data Structure and Algorithms, Operating Systems, Cloud Computing, Computer Networks},
     ]
 \end{educationSection}
 
@@ -50,8 +50,7 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Developed \textbf{FlowBench}, a workflow-based distributed benchmark by leveraging \textbf{Python}, \textbf{Docker}, \textbf{Kubernetes}, and \textbf{FaaS} principles to evaluate custom edge computing applications, providing a comprehensive report on 6+ metrics.
-        \item Built and tested a video analytics workflow via \textbf{OpenCV} on a containerized microservices architecture with Kubernetes, processing 10,000+ frames per minute.
+        \item Developed FlowBench, a distributed benchmarking framework using \textbf{Python}, \textbf{Docker}, and \textbf{Kubernetes} to evaluate edge computing applications, enabling performance comparison across 6+ metrics, including latency, throughput, and resource utilization for \textbf{FaaS} workloads
     \end{itemize}
 
     \experienceItem[
@@ -62,22 +61,23 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Filtered and routed logs from OpenShift Kubernetes clusters to Splunk using Cribl Stream pipelines, reducing daily Splunk data ingestion by \textbf{40–50 GB} and improving \textbf{log search performance by 20\%}
-        \item Designed an automated pipeline using Ansible and Red Hat registry APIs to sync updated catalog images to Nexus Repository, reducing manual update time by \textbf{ 90\%}
+        \item Architected log filtering and routing pipelines using Cribl Stream for OpenShift Kubernetes clusters, reducing Splunk ingestion by 40-50 GB/day (\textbf{~\$46K annual savings} ) and improving search performance by \textbf{20\%}
+        \item Automated container image synchronization between Red Hat Registry and Nexus Repository using \textbf{Ansible} and REST APIs, eliminating \textbf{90\%} of manual update overhead and ensuring consistent artifact versions 
+  across environments
         
     \end{itemize}
 
     \experienceItem[
         company={Cerner Healthcare (Oracle Health)},
         location={Bangalore, India},
-        position={System Engineer - 1},
+        position={DevOps Engineer},
         duration={May 2021 - Jul 2023}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Migrated 80\% of data from on-prem to \textbf{AWS}, enhancing data access flexibility, security, and cost-efficiency
-        \item Participated in regular on-call rotations with cross-functional teams, leveraging \textbf{Zabbix} and \textbf{Splunk} for system health monitoring, quality assurance, and resolving production alerts, maintaining \textbf{99.99\%} service reliability
-        \item Troubleshot and performed root cause analysis \textbf{Jenkins} pipeline issues, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
+        \item Led migration of \textbf{500TB+} enterprise healthcare data from on-prem infrastructure to AWS using \textbf{Python} and \textbf{Bash} scripts and AWS \textbf{S3}, reducing storage costs by \textbf{30\%} while maintaining HIPAA compliance
+        \item Participated in 24/7 on-call rotations, triaging P1/P2 incidents and performing\textbf{ root cause analysis}, reducing mean time to resolution (MTTR) by \textbf{35\%} through improved runbooks and automated diagnostics
+        \item Troubleshot \textbf{Jenkins} pipeline issues through root cause analysis, minimizing support ticket resolution time by \textbf{40\%} and ensuring \textbf{99.9\%} uptime for \textbf{CI/CD} workflows, leading to uninterrupted deployment pipelines
         \item Managed \textbf{300+} bi-weekly microservice deployments, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
@@ -93,10 +93,18 @@
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
+        \item Reduced deployment time by 90\% by building a fully automated \textbf{CI/CD} pipeline integrating Terraform (infrastructure provisioning), \textbf{Ansible} (configuration management), and \textbf{Jenkins/GitHub Actions}
+        \item Implemented dynamic inventory management, automated SSH key rotation, and IAM role-based access for secure, zero-touch deployments to AWS EC2 instances
+    \end{itemize}
 
-        \item Reduced deployment time by 90\%, integrating \textbf{Terraform} and \textbf{Ansible} into \textbf{Jenkins}/\textbf{GitHub Actions} CI/CD pipeline for AWS EC2 instance provisioning and web service deployment.
-        \item Optimized CI/CD pipelines to dynamically retrieve instance IPs, configure secure SSH access, and deploy services,
-        eliminating manual intervention and resolving \textbf{IAM} and resource issues in production-like environments
+    \projectItem[
+        title=Kubernetes-based Data Processing Pipeline,
+        duration={Nov 2024},
+    ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Engineered a scalable data pipeline using \textbf{Kubernetes}, \textbf{Apache Kafka}, and \textbf{Neo4j} to process \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial query time by \textbf{60\%}
     \end{itemize}
 
     \projectItem[
@@ -109,36 +117,38 @@
         \item Developed and deployed a \textbf{Flask}-based image recognition app using \textbf{Gunicorn} on AWS EC2, enabling HTTP REST API based uploads and forwarding images to \textbf{S3} via \textbf{SQS} for asynchronous processing using AWS service API.
         \item Designed an auto-scaling app tier that scaled up to \textbf{20} EC2 instances based on \textbf{SQS} queue depth, ensuring efficient, real-time image processing under varying workloads
     \end{itemize}
-
-    \projectItem[
-        title=Kubernetes-based Data Processing Pipeline,
-        duration={Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Engineered a highly scalable data processing pipeline using \textbf{Kubernetes} pods for \textbf{Apache Kafka} and \textbf{Neo4j} that processes \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial analytics query time by \textbf{60\%} and enabling real-time traffic pattern identification
-    \end{itemize}
     
 \end{experienceSection}
 
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages},
-        skills={Python, C++ Go, Java, JavaScript, Typescript, HTML, CSS, SQL (MySQL, PostgreSQL), NoSQL (MongoDB)}
+        category={Languages \& Scripting},
+        skills={Python, Go, Bash, Java, SQL}
     ] \\
     \skillItem[
-        category={Cloud Technologies},
-        skills={AWS (EC2, Lambda, S3, ECS, EKS, etc), Docker, Kubernetes, Helm, Terraform, GCP}
+        category={Cloud \& Containers},
+        skills={AWS (EC2, Lambda, S3, ECS, EKS), Docker, Kubernetes, Helm}
     ] \\
     \skillItem[
-        category={Tools},
-        skills={Linux, Unix, Git (Version Control), Bash, Github, Jenkins, Github Actions, Chef, Gitlab, Prometheus, Grafana, Datadog}
+        category={Infrastructure as Code},
+        skills={Terraform, Ansible, Chef, CloudFormation}
     ] \\
     \skillItem[
-        category={Miscellaneous},
-        skills={Distributed Systems, Microservices, Object Oriented Programming, Data Structures, Agile, Infrastructure as code (IaC), DevOps, Cloud Infrastructure, TCP/IP, Troubleshooting, Containerization, Effective Communication}
+        category={CI/CD},
+        skills={Jenkins, GitHub Actions, ArgoCD}
+    ] \\
+    \skillItem[
+        category={Observability},
+        skills={Splunk, Zabbix, Prometheus, Datadog, Grafana}
+    ] \\
+    \skillItem[
+        category={Databases},
+        skills={PostgreSQL, MySQL, MongoDB, Neo4j}
+    ] \\
+    \skillItem[
+        category={Core Competency},
+        skills={Distributed Systems, Microservices, Incident Management, System Design, Agile/Scrum}
     ]
 \end{skillsSection}
 
