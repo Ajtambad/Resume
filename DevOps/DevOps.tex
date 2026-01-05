@@ -43,14 +43,16 @@
 % --------- Experience -----------
  \begin{experienceSection}{Professional Experience}
     \experienceItem[
-        company={Arizona State University},
+        company={DriverAI LLC},
         location={Remote},
-        position={Research Assistant, VISA Lab},
-        duration={Jun 2025 - Present}
+        position={Software Engineer},
+        duration={Dec 2025 - Present}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Developed FlowBench, a distributed benchmarking framework using \textbf{Python}, \textbf{Docker}, and \textbf{Kubernetes} to evaluate edge computing applications, enabling performance comparison across 6+ metrics, including latency, throughput, and resource utilization for \textbf{FaaS} workloads
+        \item Designed and implemented a \textbf{Python FastAPI} backend with \textbf{AWS RDS MySQL} database to gamify the shopping experience. 
+        \item Engineered \textbf{GitHub Actions CI/CD} pipelines automating \textbf{Docker} image builds and deployments to \textbf{AWS ECR}, reducing deployment time by 30\%
+        \item Architected migration strategy from monolithic architecture to \textbf{microservices}, improving scalability and reducing deployment coupling.
     \end{itemize}
 
     \experienceItem[
@@ -61,7 +63,7 @@
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Architected log filtering and routing pipelines using Cribl Stream for OpenShift Kubernetes clusters, reducing Splunk ingestion by 40-50 GB/day (\textbf{~\$46K annual savings} ) and improving search performance by \textbf{20\%}
+        \item Architected log filtering and routing pipelines using \textbf{Cribl Stream} for OpenShift \textbf{Kubernetes} clusters, reducing Splunk ingestion by 40-50 GB/day (\textbf{~\$46K annual savings} ) and improving search performance by \textbf{20\%}
         \item Automated container image synchronization between Red Hat Registry and Nexus Repository using \textbf{Ansible} and REST APIs, eliminating \textbf{90\%} of manual update overhead and ensuring consistent artifact versions 
   across environments
         
@@ -95,16 +97,6 @@
         \itemsep -6pt {}
         \item Reduced deployment time by 90\% by building a fully automated \textbf{CI/CD} pipeline integrating Terraform (infrastructure provisioning), \textbf{Ansible} (configuration management), and \textbf{Jenkins/GitHub Actions}
         \item Implemented dynamic inventory management, automated SSH key rotation, and IAM role-based access for secure, zero-touch deployments to AWS EC2 instances
-    \end{itemize}
-
-    \projectItem[
-        title=Kubernetes-based Data Processing Pipeline,
-        duration={Nov 2024},
-    ]
-    \begin{itemize}
-        \vspace{-0.5em}
-        \itemsep -6pt {}
-        \item Engineered a scalable data pipeline using \textbf{Kubernetes}, \textbf{Apache Kafka}, and \textbf{Neo4j} to process \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial query time by \textbf{60\%}
     \end{itemize}
 
     \projectItem[
