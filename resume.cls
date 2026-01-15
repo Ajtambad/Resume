@@ -18,7 +18,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    urlcolor=black,
+    urlcolor=blue,
 }
 
 % Load the fontspec package to set the font
@@ -147,12 +147,12 @@
     coursework
 ]{%
     {% line 1
-        \bf \commandkey{program}%
+       \fontsize{10.5pt}{13pt}\selectfont \bf \commandkey{program}%
     } \hfill {%
          \commandkey{graduation}%
     } \\ % line end
     {% line 2
-        \commandkey{university}%
+      \fontsize{10.5pt}{13pt}\selectfont  \commandkey{university}%
     } \hfill \ifcommandkey{grade}{% Grade field is optional (Can be left empty)
         \commandkey{grade}%
     }{} \\ % line end
@@ -202,12 +202,14 @@
     duration
 ]{%
     \textbf{%
-        \commandkey{position}
+        \fontsize{10.5pt}{13pt}\selectfont \commandkey{position}
     }
         \hfill {%
         \commandkey{duration}%
     }\\
-        \commandkey{company},
+        \textbf{%
+        \fontsize{10.5pt}{13pt}\selectfont \commandkey{company},
+    }
         \commandkey{location}
     \vspace{-0.5em}%
 }%
@@ -217,7 +219,7 @@
 % ----------------- Project -------------
 \newkeycommand{\projectItem}[title, duration, keyHighlight]{%
     \textbf{%
-        \commandkey{title}%
+       \fontsize{10.5pt}{13pt}\selectfont \commandkey{title}%
     } \hfill {%
         \commandkey{duration}%
     }
