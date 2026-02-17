@@ -143,8 +143,7 @@
     college,
     program,
     graduation,
-    grade,
-    coursework
+    grade
 ]{%
     {% line 1
        \fontsize{10.5pt}{13pt}\selectfont \bf \commandkey{program}%
@@ -153,15 +152,9 @@
     } \\ % line end
     {% line 2
       \fontsize{10.5pt}{13pt}\selectfont  \commandkey{university}%
-    } \hfill \ifcommandkey{grade}{% Grade field is optional (Can be left empty)
-        \commandkey{grade}%
-    }{} \\ % line end
-    % {% line 3
-    %     \commandkey{college}
-    % } \\ % line end
-    {% line 4
-        Coursework: \commandkey{coursework}%
-    }% line end
+    } \hfill
+        \commandkey{grade} % line end
+    \\[-12pt]
 }%
 
 % ------------------------------------
@@ -227,9 +220,19 @@
 
 % ----------------------------------------
 
-% ------------ Achievements --------------
-\newcommand{\achievements}[1]{%
-    \sectionTitle{Achievements}%
+% ------------ Certifications --------------
+\newenvironment{certificateSection}[1]{%
+    \sectionTitle{#1}%
+    \begin{list}{}{ % List for each highlight in the section
+        \setlength{\leftmargin}{0em} % Margin within the section
+    }%
+        \item[]%
+    }{%
+    \end{list}%
+}%
+
+\newcommand{\certifications}[1]{%
+    \sectionTitle{Certifications}%
     #1
 }%
 % -----------------------------------
