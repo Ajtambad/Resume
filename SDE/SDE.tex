@@ -14,7 +14,7 @@
 % --------- Contact Information -----------
 \introduction[
     fullname={Amogh Jagadish Tambad},
-    location={Oakland, CA},
+    location = {Tempe, AZ},
     email={ajtambad@gmail.com},
     phone={(480) 876-5096},
     linkedin={linkedin.com/in/ajtambad},
@@ -31,12 +31,11 @@
     ] % ASU
 
     \educationItem[
-        university={REVA University, Bangalore, KA},
-        graduation={May 2021},
+        university={REVA University, Bangalore, India},
+        graduation={May 2020},
         grade={3.77 GPA},
         program={Bachelor of Technology, Computer Science},
     ]
-
 \end{educationSection}
 
 \begin{certificateSection}{Certifications}
@@ -44,9 +43,10 @@
         \item AWS Certified Solutions Architect – Associate (\href{https://www.credly.com/badges/aa37cf24-2039-4616-839e-66f37fd1b481/public_url}{SAA-C03})
     \end{itemize} 
 \end{certificateSection}
-% --------- Experience -----------
 
-    \begin{experienceSection}{Professional Experience}
+% --------- Experience -----------
+ \begin{experienceSection}{Professional Experience}
+
     \experienceItem[
         company={DriverAI LLC},
         location={Remote},
@@ -63,7 +63,7 @@
         company={Arizona State University},
         location={Remote},
         position={Research Assistant, VISA Lab},
-        duration={Jun 2025 - December 2025}
+        duration={Jun 2025 - Present}
     ]
     \begin{itemize}
         \itemsep -6pt {}
@@ -71,37 +71,36 @@
     \end{itemize}
 
 
-
     \experienceItem[
         company={Arch Mortgage Insurance},
         location={Greensboro, NC},
-        position={Software Engineer (Infrastructure \& Reliability) Intern},
+        position={Site Reliability Engineer (SRE) Intern},
         duration={Jun 2024 - Aug 2024}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Architected a \textbf{JavaScript-based} data processing pipeline with \textbf{Cribl Stream}, processing 80GB+ daily logs through 10+ conditional routing rules, reducing Splunk ingestion costs by \textbf{\$32000} annually
+        \item Architected log filtering and routing pipelines using \textbf{Cribl Stream} for OpenShift \textbf{Kubernetes} clusters, reducing Splunk ingestion by 40-50 GB/day (\textbf{~\$32K annual savings} ) and improving search performance by \textbf{20\%} across environments
         
     \end{itemize}
 
     \experienceItem[
-        company={Cerner Healthcare (Oracle Cerner)},
-        location={Bangalore, KA},
-        position={Software Engineer (Systems)},
-        duration={May 2021 - Jul 2023}
+        company={Cerner Healthcare (Oracle Health)},
+        location={Bangalore, India},
+        position={System Engineer},
+        duration={May 2020 - Jul 2023}
     ]
     \begin{itemize}
         \itemsep -6pt {}
-        \item Built cloud-native data transformation pipelines in \textbf{Python} to migrate \textbf{80}\% of enterprise data (500+ TB) from on-premise infrastructure to AWS, designing workflows that ensured zero data loss and \textbf{99.9}\% uptime
-        \item Engineered and troubleshot backend workflows and data interactions within \textbf{Cerner Millennium}, leveraging SQL-like querying (\textbf{CCL}) and database-level debugging to resolve production issues
-        \item Engineered automated monitoring solutions using Python and \textbf{Splunk} APIs, developing custom alerting logic and incident response workflows that reduced mean time to resolution (MTTR) by \textbf{30}\%
-        \item Collaborated with cross-functional teams to deliver \textbf{300+} microservice releases, implementing feature flags, \textbf{A/B testing} frameworks, and rollback mechanisms that improved deployment safety and enabled rapid iteration
+        \item Led migration of \textbf{500TB+} enterprise healthcare data from on-prem infrastructure to AWS using \textbf{Python} and \textbf{Bash} scripts and AWS \textbf{S3}, reducing storage costs by \textbf{30\%}
+        \item Participated in 24/7 on-call rotations, triaging P1/P2 incidents and performing\textbf{ root cause analysis}, reducing mean time to resolution (MTTR) by \textbf{35\%} through improved runbooks and automated diagnostics
+        \item Bridged technical and customer-facing responsibilities by triaging \textbf{support tickets} and directly engaging \textbf{customers} and \textbf{field engineers} to drive resolution.
+        \item Managed \textbf{300+} bi-weekly microservice deployments, using \textbf{Chef}, while also tracking them with \textbf{JIRA}, accelerating delivery of new UI and backend features in a fast-paced production environment
     \end{itemize}
 
 \end{experienceSection}
 
 % --------- Projects -----------
-\begin{experienceSection}{Projects}
+\begin{experienceSection}{Academic Projects}
 
     \projectItem[
         title={TalkDoc - AI-based Document Filler | Python, FastAPI, React, OpenAI GPT-4 | \href{https://github.com/Ajtambad/TalkDoc}{GitHub}},
@@ -111,17 +110,16 @@
         \vspace{-0.5em}
         \itemsep -6pt {}
         \item Built an AI-powered web application using \textbf{FastAPI} and \textbf{React} that automates document form completion through conversational interactions, leveraging\textbf{ OpenAI GPT-4} for natural language understanding and intelligent question generation
-        \item Implemented dynamic conversation flows and document generation, reducing form completion time by \textbf{40\%} while achieving over \textbf{90\%} accuracy in mapping conversational responses to structured document fields
     \end{itemize}
 
     \projectItem[
-        title={RAG Implementation for arXiv Papers | Python, DynamoDB, CLIP | \href{https://docs.google.com/presentation/d/1P5tmrAAzAmritOmKmLIJuimb-F35OWqa/edit?usp=sharing&ouid=108855816524432121587&rtpof=true&sd=true}{Slides}}, duration={Nov 2024},
+        title=Kubernetes-based Data Processing Pipeline,
+        duration={Nov 2024},
     ]
     \begin{itemize}
         \vspace{-0.5em}
         \itemsep -6pt {}
-        \item Devised a multimodal pipeline using \textbf{Python} to extract and vectorize content from \textbf{2000+} arXiv papers, implementing \textbf{CLIP} and text embedding models, \textbf{DynamoDB} indexing and vector database storage
-        \item Implemented a similarity search and summarization pipeline with DynamoDB and GPT-4o mini to deliver concise, contextually relevant responses to user queries with an average response time of under \textbf{2 seconds}
+        \item Engineered a highly scalable data processing pipeline using \textbf{Kubernetes} pods for \textbf{Apache Kafka} and \textbf{Neo4j} that processes \textbf{100,000+} NYC taxi records in near-real-time, reducing spatial analytics query time by \textbf{60\%} and enabling real-time traffic pattern identification
     \end{itemize}
 
     
@@ -130,26 +128,37 @@
 % --------- Skills -----------
 \begin{skillsSection}{Skills}
     \skillItem[
-        category={Languages},
-        skills={Python, Go, Java, C++, SQL}
+        category={Languages \& Scripting},
+        skills={Python, Go, Bash, Java, SQL}
     ] \\
     \skillItem[
-        category={Web \& APIs},
-        skills={Flask, FastAPI, Spring Boot, Node.js, React.js, REST/GraphQL APIs}
+        category={Cloud \& Containers},
+        skills={AWS, Azure, Docker, Kubernetes, Helm}
+    ] \\
+    \skillItem[
+        category={Infrastructure as Code},
+        skills={Terraform, Ansible, Chef, CloudFormation}
+    ] \\
+    \skillItem[
+        category={CI/CD},
+        skills={Jenkins, GitHub Actions, ArgoCD}
+    ] \\
+    \skillItem[
+        category={Observability},
+        skills={Splunk, Zabbix, Prometheus, Datadog, Grafana}
     ] \\
     \skillItem[
         category={Databases},
-        skills={PostgreSQL, MySQL, MongoDB, Redis, DynamoDB, Vector DBs (FAISS, ChromaDB)}
-    ]\\
-    \skillItem[
-        category={DevOps},
-        skills={AWS, Docker, Kubernetes, Terraform, Helm, Jenkins, ArgoCD, Kafka, Linux/Unix, Ansible, Splunk, Prometheus, Cribl}
+        skills={PostgreSQL, MySQL, MongoDB, Neo4j}
     ] \\
     \skillItem[
-        category={AI/ML},
-        skills={PyTorch, TensorFlow, LangChain, LangGraph, RAG}
+        category={AI Agents},
+        skills={Claude Code, Codex, Copilot, Replit}
+    ]\\
+    \skillItem[
+        category={Core Competency},
+        skills={Distributed Systems, Microservices, System Design, Incident Management, Agile/Scrum}
     ]
-    
 \end{skillsSection}
 
 \end{document}
