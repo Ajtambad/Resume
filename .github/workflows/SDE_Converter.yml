@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Compile LaTex document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v4
         with:
           root_file: SDE/SDE.tex
 
